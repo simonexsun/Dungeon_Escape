@@ -7,22 +7,21 @@
 Adafruit_MPU6050 mpu;
 
 int bntPin = 4;
-bool bntOpen = false;
-int bntValueOld = 1;
-int bntValueNew;
+bool takeover = false;
+int previousBntValue = 1;
 
 void setup(void) {
   Serial.begin(9600);
   pinMode(bntPin, INPUT_PULLUP);
-  
+
   // Try to initialize!
-  if (!mpu.begin()) {
+  while (!mpu.begin()) {
     Serial.println("Failed to find MPU6050 chip");
-    while (1) {
-      delay(10);
-    }
+    delay(500);
   }
   Serial.println("MPU6050 Found!");
+  delay(1000);
+
 
   // set accelerometer range to +-8G
   mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
@@ -37,50 +36,41 @@ void setup(void) {
 }
 
 void loop() {
-//Toggle button
-    bntValueNew = digitalRead(bntPin); //1 = unpressed 0 = pressed
-  if (bntValueOld == 0 && bntValueNew == 1){ //press and release onece
-    if(!bntOpen) // if it is closed, turn that on
-        { 
-          bntOpen = true;
-        }else{ // if it is open, turn that off
-           bntOpen = false;
-              }
+  //Toggle button
+  int bntValue = digitalRead(bntPin); //1 = unpressed, 0 = pressed
+  if (previousBntValue == 0 && bntValue == 1) { //press and release onece
+    Serial.println("button pressed");
+    takeover = !takeover;
   }
-  bntValueOld = bntValueNew;
-  Serial.print(bntValueOld);
-  Serial.print(bntValueNew);
-  Serial.println(bntOpen);
+  previousBntValue = bntValue;
 
-if(bntOpen){
-/* Get new sensor events with the readings */
-  sensors_event_t a, g, temp;
-  mpu.getEvent(&a, &g, &temp);
+  if (takeover) {
+    /* Get new sensor events with the readings */
+    sensors_event_t a, g, temp;
+    mpu.getEvent(&a, &g, &temp);
 
-  /* Print out the values */
-  Serial.print("Acceleration X: ");
-  Serial.print(a.acceleration.x);
-  Serial.print(", Y: ");
-  Serial.print(a.acceleration.y);
-  Serial.print(", Z: ");
-  Serial.print(a.acceleration.z);
-  Serial.println(" m/s^2");
+    /* Print out the values */
+    /*
+    Serial.print("Acceleration X: ");
+    Serial.print(a.acceleration.x);
+    Serial.print(", Y: ");
+    Serial.print(a.acceleration.y);
+    Serial.print(", Z: ");
+    Serial.print(a.acceleration.z);
+    Serial.println(" m/s^2");
 
-  Serial.print("Rotation X: ");
-  Serial.print(g.gyro.x);
-  Serial.print(", Y: ");
-  Serial.print(g.gyro.y);
-  Serial.print(", Z: ");
-  Serial.print(g.gyro.z);
-  Serial.println(" rad/s");
+    Serial.print("Rotation X: ");
+    Serial.print(g.gyro.x);
+    Serial.print(", Y: ");
+    Serial.print(g.gyro.y);
+    Serial.print(", Z: ");
+    Serial.print(g.gyro.z);
+    Serial.println(" rad/s");
+    */
 
-  Serial.print("Temperature: ");
-  Serial.print(temp.temperature);
-  Serial.println(" degC");
-
-  Serial.println("");
-  // x position is reversed to match the mouse movement.
-  Mouse.move(-g.gyro.x-a.acceleration.x,g.gyro.y+a.acceleration.y);
-}
-  delay(500);
+    Serial.println("moving mouse");
+    // x position is reversed to match the mouse movement.
+    Mouse.move(-g.gyro.x - a.acceleration.x, g.gyro.y + a.acceleration.y);
+  }
+  delay(20);
 }
