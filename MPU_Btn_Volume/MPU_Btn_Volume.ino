@@ -3,6 +3,7 @@
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
 #include <Wire.h>
+#include <Keyboard.h>
 
 Adafruit_MPU6050 mpu;
 
@@ -77,10 +78,38 @@ void loop() {
     Serial.print("Volumn: ");
     Serial.print(voiceValue);
     Serial.println(" dB");
-
-    //Serial.println("moving mouse");
     // x position is reversed to match the mouse movement.
-    Mouse.move(-g.gyro.x - a.acceleration.x, g.gyro.y + a.acceleration.y);
+
+    //debugging
+    //Serial.println("moving mouse");
+    //Serial.print("mouseX.move: ");
+    //Serial.print(-g.gyro.x - a.acceleration.x);
+    //Serial.print("mouseY.move: ");
+    //Serial.println(g.gyro.y + a.acceleration.y);
+
+    float xAxis = -g.gyro.x - a.acceleration.x;  // x position is reversed to match the mouse movement.
+    float yAxis = g.gyro.y + a.acceleration.y;
+
+    //make the gyroscope movement to control the arrow keys
+    if (xAxis < 0) {
+      Keyboard.press(KEY_LEFT_ARROW);
+      Keyboard.release(KEY_LEFT_ARROW);
+      Serial.println("left");
+    } else if (xAxis > 0) {
+      Keyboard.press(KEY_RIGHT_ARROW);
+      Keyboard.release(KEY_RIGHT_ARROW);
+      Serial.println("right");
+    }
+    if (yAxis < 0) {
+      Keyboard.press(KEY_UP_ARROW);
+      Keyboard.release(KEY_UP_ARROW);
+      Serial.println("up");
+    } else if (yAxis > 0) {
+      Keyboard.press(KEY_DOWN_ARROW);
+      Keyboard.release(KEY_DOWN_ARROW);
+      Serial.println("down");
+
+    }
   }
-  delay(20);
+  delay(200);
 }
