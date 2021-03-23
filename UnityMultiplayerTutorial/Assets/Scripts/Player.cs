@@ -13,15 +13,15 @@ public class Player : Photon.MonoBehaviour
     public Text PlayerNameText;
     public float MoveSpeed;
 
-    public float jumpSpeed;
-    public float moveInput;
-    private bool isOnGround;
+    // public float jumpSpeed;
+    // public float moveInput;
+    // private bool isOnGround;
     public Transform playerPos;
     public float positionRadius;
-    public LayerMask ground;
-    private float airTimeCount;
-    public float airTime;
-    private bool inAir;
+    // public LayerMask ground;
+    // private float airTimeCount;
+    // public float airTime;
+    // private bool inAir;
 
     public GameObject BulletObject;
     public Transform FirePos;
@@ -53,53 +53,54 @@ public class Player : Photon.MonoBehaviour
 
     private void CheckInput()
     {
-        isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, ground);
-        if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
-        {
-            inAir = true;
-            airTimeCount = airTime;
-            rb.velocity = Vector2.up * jumpSpeed;
-        }
+        // isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, ground);
+        // if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     inAir = true;
+        //     airTimeCount = airTime;
+        //     rb.velocity = Vector2.up * jumpSpeed;
+        // }
 
-        if (Input.GetKey(KeyCode.Space) && inAir == true)
-        {
-            if (airTimeCount > 0)
-            {
-                rb.velocity = Vector2.up * jumpSpeed;
-                airTimeCount -= Time.deltaTime;
-            }
-            else
-            {
-                inAir = false;
-            }
-        }
+        // if (Input.GetKey(KeyCode.Space) && inAir == true)
+        // {
+        //     if (airTimeCount > 0)
+        //     {
+        //         rb.velocity = Vector2.up * jumpSpeed;
+        //         airTimeCount -= Time.deltaTime;
+        //     }
+        //     else
+        //     {
+        //         inAir = false;
+        //     }
+        // }
 
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            inAir = false;
-        }
+        // if (Input.GetKeyUp(KeyCode.Space))
+        // {
+        //     inAir = false;
+        // }
 
-        var move = new Vector3(Input.GetAxisRaw("Horizontal"), 0);
-        transform.position += move * MoveSpeed * Time.deltaTime;
+        var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
+        transform.position += moveH * MoveSpeed * Time.deltaTime;
+        transform.position += moveV * MoveSpeed * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
         }
 
-
-        if (Input.GetKeyDown(KeyCode.A))
+        //flip face direction
+        if(Input.GetAxis("Horizontal") < 0)
         {
             photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
+        } 
+        if(Input.GetAxis("Horizontal") > 0)
         {
             photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
         }
 
-
-        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        //play running animation
+        if(Input.GetAxis("Horizontal") != 0)
         {
             anim.SetBool("isRunning", true);
         }
@@ -107,6 +108,31 @@ public class Player : Photon.MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
+
+        //Original way to flip face direction
+
+        // if (Input.GetKeyDown(KeyCode.A))
+        // {
+        //     photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
+        //     rb.AddForce(transform.right * -1f * MoveSpeed);
+        // }
+
+        // if (Input.GetKeyDown(KeyCode.D))
+        // {
+        //     photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
+        //     rb.AddForce(transform.right * 1f * MoveSpeed);
+        // }
+
+        //Original way to play running animation
+
+        // if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        // {
+        //     anim.SetBool("isRunning", true);
+        // }
+        // else
+        // {
+        //     anim.SetBool("isRunning", false);
+        // }
 
     }
 
