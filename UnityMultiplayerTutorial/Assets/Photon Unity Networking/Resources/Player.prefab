@@ -763,6 +763,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 1
     Name: isRunning
+  - Type: 9
+    SynchronizeType: 0
+    Name: shootTrigger
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -980,7 +983,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2691799254744639860
 MonoBehaviour:
   m_ObjectHideFlags: 0
