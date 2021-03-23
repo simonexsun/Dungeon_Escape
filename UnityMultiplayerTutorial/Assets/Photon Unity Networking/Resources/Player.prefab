@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 7167140364490831710}
   - component: {fileID: 8596749054251955080}
   - component: {fileID: 315492206635824748}
-  - component: {fileID: 6777795831789998410}
+  - component: {fileID: 8362755223579659567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -800,7 +800,7 @@ MonoBehaviour:
   bc: {fileID: 4724468037506078679}
   sr: {fileID: 4724468037506078676}
   PlayerCanvas: {fileID: 5564646025579688384}
---- !u!114 &6777795831789998410
+--- !u!114 &8362755223579659567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
