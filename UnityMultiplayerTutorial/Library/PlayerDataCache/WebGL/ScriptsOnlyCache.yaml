@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - PunSceneSettings
     Assembly-CSharp.dll:
     - Bullet
     - ChatManager
@@ -79,43 +77,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 2014}
+      Script: {instanceID: 1890}
     - Class: 114
-      Script: {instanceID: 2338}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2446}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2790}
+      Script: {instanceID: 2786}
     - Class: 114
       Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 2794}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3084}
     - Class: 114
-      Script: {instanceID: 3970}
+      Script: {instanceID: 3494}
     - Class: 114
-      Script: {instanceID: 4080}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 4242}
+      Script: {instanceID: 3974}
     - Class: 114
-      Script: {instanceID: 4434}
+      Script: {instanceID: 4084}
     - Class: 114
-      Script: {instanceID: 4464}
+      Script: {instanceID: 4246}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 4438}
     - Class: 114
-      Script: {instanceID: 30060}
+      Script: {instanceID: 4468}
     - Class: 114
-      Script: {instanceID: 73360}
+      Script: {instanceID: 4478}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -166,43 +164,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 2014}
+      Script: {instanceID: 1890}
     - Class: 114
-      Script: {instanceID: 2338}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2446}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2790}
+      Script: {instanceID: 2786}
     - Class: 114
       Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 2794}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3274}
+      Script: {instanceID: 3084}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3276}
     - Class: 114
-      Script: {instanceID: 3970}
+      Script: {instanceID: 3494}
     - Class: 114
-      Script: {instanceID: 4080}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 4218}
+      Script: {instanceID: 3974}
     - Class: 114
-      Script: {instanceID: 4242}
+      Script: {instanceID: 4084}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 4222}
     - Class: 114
-      Script: {instanceID: 30060}
+      Script: {instanceID: 4246}
     - Class: 114
-      Script: {instanceID: 73360}
+      Script: {instanceID: 4478}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -320,6 +318,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ManualPhotonViewAllocator
+  - hash:
+      serializedVersion: 2
+      Hash: c4b35742b52a4b928de9684f93abaaa9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Dragon
   - hash:
       serializedVersion: 2
       Hash: 303ad70ce203ad874efe2965d0fbcff9
@@ -868,6 +872,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenBoundaries
+  - hash:
+      serializedVersion: 2
       Hash: 2b53d93770b9036b2fd1c7854560bc69
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -986,20 +996,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatManager
-  - hash:
-      serializedVersion: 2
-      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScreenBoundaries
-  - hash:
-      serializedVersion: 2
-      Hash: c4b35742b52a4b928de9684f93abaaa9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Dragon
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: /Users/simonesun/Desktop/Builds/webGL_1
+  playerPath: /Users/simonesun/Desktop/Builds/webGL_4

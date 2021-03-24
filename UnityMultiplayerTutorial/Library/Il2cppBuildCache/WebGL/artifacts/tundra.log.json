@@ -1,5 +1,1 @@
 {"msg":"init","dagFile":"artifacts/tundra.dag","targets":[]}
-{"msg":"newNode","annotation":"WriteResponseFile artifacts/rsp/6907079651088997236.rsp","index":1}
-{"msg":"noderesult","annotation":"WriteResponseFile artifacts/rsp/6907079651088997236.rsp","index":1,"exitcode":0}
-{"msg":"newNode","annotation":"Il2Cpp /Users/simonesun/Desktop/Lab/Midterm_Repo/Dungeon_Escape/UnityMultiplayerTutorial/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2}
-{"msg":"noderesult","annotation":"Il2Cpp /Users/simonesun/Desktop/Lab/Midterm_Repo/Dungeon_Escape/UnityMultiplayerTutorial/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}
