@@ -46,10 +46,23 @@ public class Dragon : Photon.MonoBehaviour
 
     private void CheckInput()
     {
-        var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-        var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
-        transform.position += moveH * MoveSpeed * Time.deltaTime;
-        transform.position += moveV * MoveSpeed * Time.deltaTime;
+
+        if (Input.GetKey("a"))
+        {
+            rb.rotation += 100.0f * Time.deltaTime;
+        }
+        if (Input.GetKey("d"))
+        {
+            rb.rotation -= 100.0f * Time.deltaTime;
+        }
+        if (Input.GetKey("w"))
+        {
+            rb.AddForce(transform.up * MoveSpeed);
+        }
+        if (Input.GetKey("s"))
+        {
+            rb.AddForce(transform.up * MoveSpeed * -1);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
