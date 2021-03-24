@@ -24314,3 +24314,2659 @@ Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076
   ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
   Import took 0.001735 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005342 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.035 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1507 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.8 MB.
+System memory in use after: 129.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1951.
+Total: 1.636500 ms (FindLiveObjects: 0.150750 ms CreateObjectMapping: 0.036000 ms MarkObjects: 1.058583 ms  DeleteObjects: 0.390167 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.950418 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.018819 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.020859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036380 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000671 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.322019 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000484 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.156531 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000477 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025874 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000480 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075716 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000589 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059701 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000572 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085084 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000654 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060567 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000569 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075736 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000576 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062935 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000637 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073803 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000642 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057704 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000568 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077437 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000638 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073978 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000781 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069352 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000691 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074490 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000804 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071296 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000676 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071711 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000765 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069919 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000766 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073747 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000862 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054280 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000750 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078223 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000773 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063766 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000788 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071921 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000737 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062591 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000794 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070391 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000821 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068772 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000781 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074177 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000753 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068798 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000879 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057925 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000656 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.086271 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000534 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072304 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000571 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071442 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000646 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071441 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000655 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073428 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000630 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059718 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000682 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072243 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000572 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073819 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000631 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072723 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000657 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074465 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000728 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058106 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000645 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077867 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070891 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000697 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057487 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000567 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075476 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000555 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072170 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000576 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072611 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000684 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076057 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000641 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068628 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000631 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072972 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000721 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057744 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000689 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084343 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000665 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065114 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000720 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057950 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000684 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077097 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000652 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074657 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000805 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069082 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000722 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073077 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000849 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072593 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000712 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050113 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000692 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084490 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000768 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071649 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000678 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068285 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061466 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000680 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076592 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000577 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070191 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000717 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062159 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000670 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076370 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000648 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071152 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000769 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069875 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000699 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072513 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000764 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.003644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057069 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000563 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:11:20Z'
+  Import took 0.002583 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002527 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1507 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.0 MB.
+System memory in use after: 130.1 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1954.
+Total: 1.223417 ms (FindLiveObjects: 0.102750 ms CreateObjectMapping: 0.029417 ms MarkObjects: 1.072125 ms  DeleteObjects: 0.018208 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.419659 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.023433 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.026996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.128114 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000701 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031245 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000518 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061773 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000668 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040904 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000565 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076323 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000688 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048443 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000542 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062074 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000573 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074465 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000760 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060042 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000687 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075502 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000777 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061315 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000652 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072974 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000664 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060804 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000682 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075273 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000678 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073127 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000663 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065596 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000679 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068268 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000626 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072865 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000570 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059559 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084910 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063624 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000578 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059152 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000545 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085899 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000571 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065817 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000568 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062047 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000573 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061739 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000597 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075480 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000530 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073807 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000570 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069464 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000630 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062229 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000578 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077517 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000604 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060229 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000627 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070728 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000563 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070753 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000671 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085773 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.002934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061450 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000732 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060181 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000734 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075774 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000726 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071383 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000727 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064405 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000793 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069621 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000759 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054596 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000684 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071888 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000687 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074060 seconds.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(6baac2417356eca409ea66b1e46d64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000704 seconds
+  ERROR: Build asset version error: assets/scenes/maingame.unity in SourceAssetDB has modification time of '2020-12-20T18:50:16Z' while content on disk has modification time of '2021-03-24T04:20:01Z'
+  Import took 0.003125 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.842 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1507 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.2 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1957.
+Total: 1.280417 ms (FindLiveObjects: 0.139250 ms CreateObjectMapping: 0.032125 ms MarkObjects: 1.088375 ms  DeleteObjects: 0.019666 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.373311 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000028 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026866 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013142 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033895 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000018 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080948 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000018 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062724 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087686 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000029 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050546 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000027 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056153 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061475 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066143 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063898 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068009 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060819 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.002279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059908 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.089586 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.289814 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.114501 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035659 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000018 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047900 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062605 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071003 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078918 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065772 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067376 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078785 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060583 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069940 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.081163 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060915 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072146 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078728 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065938 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057146 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000019 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071591 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000015 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080162 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061210 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000015 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070745 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080527 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060390 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070708 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000015 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079936 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061650 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062331 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071739 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080044 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060769 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087947 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000019 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059106 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070338 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078970 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000019 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061149 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000019 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069920 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079616 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065249 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061437 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044858 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.105583 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063184 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061498 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000015 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067262 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.051898 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000015 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078965 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061995 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072937 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000018 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078943 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064598 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080282 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060410 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069743 seconds.
+  path: 
+  artifactKey: Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a3571847a8e924577aa5062d64474424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID 'a3571847a8e924577aa5062d64474424'
+  Import took 0.001685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.965799 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001066 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023039 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000018 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041454 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057811 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067431 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073493 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060163 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000042 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.086871 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000027 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062505 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062620 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.082226 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065868 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062577 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075871 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071817 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000030 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062305 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000030 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065293 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065761 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000028 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063711 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080349 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000034 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061807 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061335 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000028 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078215 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000027 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072015 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000030 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061442 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071979 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069942 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076056 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072214 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000024 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063247 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000028 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062445 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077502 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069289 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060604 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078211 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077557 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059835 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069080 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072071 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075826 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072323 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074782 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066038 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072680 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000025 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071647 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072060 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064269 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.169374 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024635 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000016 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084520 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066005 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000018 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070990 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000017 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.001851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071321 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061723 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000019 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078133 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066319 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000022 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071150 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000021 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058352 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000026 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076955 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073501 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000023 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063736 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000019 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072423 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.079677 seconds.
+  path: 
+  artifactKey: Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(60bce3bca9e554cd0b4475aa7c40979a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000020 seconds
+  ERROR: Unknown asset with GUID '60bce3bca9e554cd0b4475aa7c40979a'
+  Import took 0.002324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.575157 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006455 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001388 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019723 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001488 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028505 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001581 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067959 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001870 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044465 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001697 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073005 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001832 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070552 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001974 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060817 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002136 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065836 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002008 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069880 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001988 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068695 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002075 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060868 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002015 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061256 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001994 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058661 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001753 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.250494 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001349 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018055 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001433 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066772 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001627 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067130 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001602 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085537 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001834 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060956 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002005 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065137 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001888 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066842 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001925 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060533 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001764 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073020 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001942 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057025 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001755 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074301 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001781 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071952 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001792 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059629 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001752 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074057 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001968 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070949 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001703 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064425 seconds.
+  path: Assets/Sprites/Player.controller
+  artifactKey: Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.controller using Guid(08328d6801a8e7f42a73b020a99f7bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001804 seconds
+  ERROR: Build asset version error: assets/sprites/player.controller in SourceAssetDB has modification time of '2020-12-05T14:31:08Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004076 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000850 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.672 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1507 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.4 MB.
+System memory in use after: 130.5 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1960.
+Total: 1.143000 ms (FindLiveObjects: 0.082250 ms CreateObjectMapping: 0.029417 ms MarkObjects: 1.013375 ms  DeleteObjects: 0.017084 ms)
+
