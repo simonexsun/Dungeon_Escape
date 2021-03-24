@@ -40,6 +40,7 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PingCloudRegions.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ManualPhotonViewAllocator.cs" />
+     <Compile Include="Assets\Scripts\Dragon.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
      <Compile Include="Assets\PhotonChatApi\ChatClient.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunPlayerScores.cs" />
@@ -98,6 +99,7 @@
      <Compile Include="Assets\PhotonChatApi\ChatOperationCode.cs" />
      <Compile Include="Assets\PhotonChatApi\ChatChannel.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewScaleControl.cs" />
+     <Compile Include="Assets\Scripts\ScreenBoundaries.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\MoveByKeys.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\PhotonChatApi\ChannelCreationOptions.cs" />
@@ -114,8 +116,6 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnStartDelete.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\ChatManager.cs" />
-     <Compile Include="Assets\Scripts\ScreenBoundaries.cs" />
-     <Compile Include="Assets\Scripts\Dragon.cs" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\Photon Unity Networking\link.xml" />
