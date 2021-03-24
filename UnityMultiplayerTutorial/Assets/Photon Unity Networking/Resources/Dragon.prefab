@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 1385724238154442596}
   - component: {fileID: 6923729244105892480}
   - component: {fileID: 1186879906316212675}
+  - component: {fileID: 5520076241560790490}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Player
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2730997543826113333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e57276722ea9595419d2bd8a0db41b53, type: 3}
   m_Name: 
@@ -448,6 +449,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 2730997541982274689}
+--- !u!114 &5520076241560790490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730997543826113333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7753212228e194f29a3c62ee8d37d2d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photonView: {fileID: 2730997543826113343}
+  rb: {fileID: 2730997543826113338}
+  anim: {fileID: 2730997543826113342}
+  PlayerCamera: {fileID: 2730997541982274690}
+  sr: {fileID: 2730997543826113336}
+  PlayerNameText: {fileID: 8126486365186647418}
+  MoveSpeed: 5
+  playerPos: {fileID: 8472064541798024061}
+  positionRadius: 0.3
+  BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
+    type: 3}
+  FirePos: {fileID: 2141290603728859975}
+  DisableInput: 0
 --- !u!1 &2976674287214372140
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5574719520838924924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.162, y: 0.002, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2730997543826113337}

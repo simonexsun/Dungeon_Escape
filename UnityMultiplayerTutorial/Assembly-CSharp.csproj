@@ -115,6 +115,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\ChatManager.cs" />
      <Compile Include="Assets\Scripts\ScreenBoundaries.cs" />
+     <Compile Include="Assets\Scripts\Dragon.cs" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\Photon Unity Networking\link.xml" />

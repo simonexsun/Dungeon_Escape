@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : Photon.MonoBehaviour
+public class Dragon : Photon.MonoBehaviour
 {
     public PhotonView photonView;
     public Rigidbody2D rb;
@@ -13,15 +13,8 @@ public class Player : Photon.MonoBehaviour
     public Text PlayerNameText;
     public float MoveSpeed;
 
-    // public float jumpSpeed;
-    // public float moveInput;
-    // private bool isOnGround;
     public Transform playerPos;
     public float positionRadius;
-    // public LayerMask ground;
-    // private float airTimeCount;
-    // public float airTime;
-    // private bool inAir;
 
     public GameObject BulletObject;
     public Transform FirePos;
@@ -53,7 +46,6 @@ public class Player : Photon.MonoBehaviour
 
     private void CheckInput()
     {
-
         var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
         transform.position += moveH * MoveSpeed * Time.deltaTime;
@@ -67,14 +59,16 @@ public class Player : Photon.MonoBehaviour
         //flip face direction
         if (Input.GetAxis("Horizontal") < 0)
         {
-            photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
+            // photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
+            sr.flipX = true;
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
+            // photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
+            sr.flipX = false;
         }
 
-        //play running animation
+        //play running animator
         if (Input.GetAxis("Horizontal") != 0)
         {
             anim.SetBool("isRunning", true);
@@ -83,32 +77,6 @@ public class Player : Photon.MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
-
-        //Original way to flip face direction
-
-        // if (Input.GetKeyDown(KeyCode.A))
-        // {
-        //     photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
-        //     rb.AddForce(transform.right * -1f * MoveSpeed);
-        // }
-
-        // if (Input.GetKeyDown(KeyCode.D))
-        // {
-        //     photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
-        //     rb.AddForce(transform.right * 1f * MoveSpeed);
-        // }
-
-        //Original way to play running animation
-
-        // if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-        // {
-        //     anim.SetBool("isRunning", true);
-        // }
-        // else
-        // {
-        //     anim.SetBool("isRunning", false);
-        // }
-
     }
 
 
