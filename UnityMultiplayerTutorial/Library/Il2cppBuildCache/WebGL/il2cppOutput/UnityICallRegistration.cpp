@@ -140,6 +140,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Behaviour
 
+	//Start Registrations for type : UnityEngine.BoxCollider2D
+
+		//System.Void UnityEngine.BoxCollider2D::get_size_Injected(UnityEngine.Vector2&)
+		void Register_UnityEngine_BoxCollider2D_get_size_Injected();
+		Register_UnityEngine_BoxCollider2D_get_size_Injected();
+
+	//End Registrations for type : UnityEngine.BoxCollider2D
+
 	//Start Registrations for type : UnityEngine.Camera
 
 		//System.Int32 UnityEngine.Camera::GetAllCamerasCount()
@@ -181,6 +189,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::ScreenToViewportPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Camera_ScreenToViewportPoint_Injected();
 		Register_UnityEngine_Camera_ScreenToViewportPoint_Injected();
+
+		//System.Void UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
+		void Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
+		Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
 
 		//System.Void UnityEngine.Camera::WorldToScreenPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
 		void Register_UnityEngine_Camera_WorldToScreenPoint_Injected();
@@ -1130,9 +1142,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Input_GetKeyInt();
 		Register_UnityEngine_Input_GetKeyInt();
 
-		//System.Boolean UnityEngine.Input::GetKeyUpInt(UnityEngine.KeyCode)
-		void Register_UnityEngine_Input_GetKeyUpInt();
-		Register_UnityEngine_Input_GetKeyUpInt();
+		//System.Boolean UnityEngine.Input::GetKeyString(System.String)
+		void Register_UnityEngine_Input_GetKeyString();
+		Register_UnityEngine_Input_GetKeyString();
 
 		//System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
 		void Register_UnityEngine_Input_GetMouseButton();
@@ -1157,6 +1169,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.Input::get_touchCount()
 		void Register_UnityEngine_Input_get_touchCount();
 		Register_UnityEngine_Input_get_touchCount();
+
+		//System.Single UnityEngine.Input::GetAxis(System.String)
+		void Register_UnityEngine_Input_GetAxis();
+		Register_UnityEngine_Input_GetAxis();
 
 		//System.Single UnityEngine.Input::GetAxisRaw(System.String)
 		void Register_UnityEngine_Input_GetAxisRaw();
@@ -1614,10 +1630,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_PhysicsScene2D_Raycast_Internal_Injected();
 		Register_UnityEngine_PhysicsScene2D_Raycast_Internal_Injected();
 
-		//UnityEngine.Collider2D UnityEngine.PhysicsScene2D::OverlapCircle_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector2&,System.Single,UnityEngine.ContactFilter2D&)
-		void Register_UnityEngine_PhysicsScene2D_OverlapCircle_Internal_Injected();
-		Register_UnityEngine_PhysicsScene2D_OverlapCircle_Internal_Injected();
-
 	//End Registrations for type : UnityEngine.PhysicsScene2D
 
 	//Start Registrations for type : UnityEngine.Playables.PlayableHandle
@@ -1962,6 +1974,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody2D_get_angularVelocity();
 		Register_UnityEngine_Rigidbody2D_get_angularVelocity();
 
+		//System.Single UnityEngine.Rigidbody2D::get_rotation()
+		void Register_UnityEngine_Rigidbody2D_get_rotation();
+		Register_UnityEngine_Rigidbody2D_get_rotation();
+
 		//System.Void UnityEngine.Rigidbody2D::AddForce_Injected(UnityEngine.Vector2&,UnityEngine.ForceMode2D)
 		void Register_UnityEngine_Rigidbody2D_AddForce_Injected();
 		Register_UnityEngine_Rigidbody2D_AddForce_Injected();
@@ -1977,6 +1993,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rigidbody2D::set_gravityScale(System.Single)
 		void Register_UnityEngine_Rigidbody2D_set_gravityScale();
 		Register_UnityEngine_Rigidbody2D_set_gravityScale();
+
+		//System.Void UnityEngine.Rigidbody2D::set_rotation(System.Single)
+		void Register_UnityEngine_Rigidbody2D_set_rotation();
+		Register_UnityEngine_Rigidbody2D_set_rotation();
 
 		//System.Void UnityEngine.Rigidbody2D::set_velocity_Injected(UnityEngine.Vector2&)
 		void Register_UnityEngine_Rigidbody2D_set_velocity_Injected();

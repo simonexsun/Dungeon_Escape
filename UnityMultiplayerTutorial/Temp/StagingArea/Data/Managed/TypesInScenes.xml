@@ -50,6 +50,7 @@
 		<type fullname="Bullet" preserve="nothing"/>
 		<type fullname="ChatManager" preserve="nothing"/>
 		<type fullname="DestroyFeed" preserve="nothing"/>
+		<type fullname="Dragon" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="Health" preserve="nothing"/>
 		<type fullname="MenuController" preserve="nothing"/>
@@ -57,6 +58,7 @@
 		<type fullname="PhotonTransformView" preserve="nothing"/>
 		<type fullname="PhotonView" preserve="nothing"/>
 		<type fullname="Player" preserve="nothing"/>
+		<type fullname="ScreenBoundaries" preserve="nothing"/>
 		<type fullname="ServerSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">

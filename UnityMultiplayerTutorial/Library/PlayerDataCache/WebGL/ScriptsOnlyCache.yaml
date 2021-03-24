@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Bullet
     - ChatManager
     - DestroyFeed
+    - Dragon
     - GameManager
     - Health
     - MenuController
@@ -13,6 +14,7 @@ ScriptsOnlyBuild:
     - PhotonTransformView
     - PhotonView
     - Player
+    - ScreenBoundaries
     - ServerSettings
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -27,8 +29,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -73,41 +77,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16478}
+      Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 16958}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 17276}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 17378}
+      Script: {instanceID: 2446}
     - Class: 114
-      Script: {instanceID: 17530}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 17568}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 17708}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 17714}
+      Script: {instanceID: 2790}
     - Class: 114
-      Script: {instanceID: 17716}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 17806}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 18002}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 18404}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 18870}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 18974}
+      Script: {instanceID: 4080}
     - Class: 114
-      Script: {instanceID: 19132}
+      Script: {instanceID: 4242}
     - Class: 114
-      Script: {instanceID: 19318}
+      Script: {instanceID: 4434}
     - Class: 114
-      Script: {instanceID: 19348}
+      Script: {instanceID: 4464}
     - Class: 114
-      Script: {instanceID: 19358}
+      Script: {instanceID: 4474}
+    - Class: 114
+      Script: {instanceID: 30060}
+    - Class: 114
+      Script: {instanceID: 73360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,41 +164,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16478}
+      Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 16958}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 17276}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 17378}
+      Script: {instanceID: 2446}
     - Class: 114
-      Script: {instanceID: 17530}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 17568}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 17708}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 17714}
+      Script: {instanceID: 2790}
     - Class: 114
-      Script: {instanceID: 17716}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 17806}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 18002}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 18192}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 18404}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 18870}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 18974}
+      Script: {instanceID: 4080}
     - Class: 114
-      Script: {instanceID: 19108}
+      Script: {instanceID: 4218}
     - Class: 114
-      Script: {instanceID: 19132}
+      Script: {instanceID: 4242}
     - Class: 114
-      Script: {instanceID: 19358}
+      Script: {instanceID: 4474}
+    - Class: 114
+      Script: {instanceID: 30060}
+    - Class: 114
+      Script: {instanceID: 73360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -214,6 +226,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: 24c74cc0d527a06113f2b967042769f0
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEditor.XR.LegacyInputHelpers
@@ -224,12 +242,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: ab039a385ef4459756519a3fe91dccc6
@@ -610,7 +622,7 @@ ScriptsOnlyBuild:
     className: NetworkCullingHandler
   - hash:
       serializedVersion: 2
-      Hash: 93e6ec962a15bf392e9105f4757bf791
+      Hash: c4b35742b52a4b928de9684f93abaaa9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -964,7 +976,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: dc16ac6f3080e81dc310ec49b449a10d
+      Hash: b08b597a484faa687cadf3c3662fdea9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -974,8 +986,20 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatManager
+  - hash:
+      serializedVersion: 2
+      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: c4b35742b52a4b928de9684f93abaaa9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Dragon
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: /Users/simonesun/Downloads/UnityMultiplayerTutorial/Builds/webGL
+  playerPath: /Users/simonesun/Desktop/Builds/webGL_1

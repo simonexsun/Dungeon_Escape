@@ -545,6 +545,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Dragon",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "GameManager",
             "moduleName": "",
             "usedInScenes": []
@@ -588,6 +595,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Player",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ScreenBoundaries",
             "moduleName": "",
             "usedInScenes": []
         },

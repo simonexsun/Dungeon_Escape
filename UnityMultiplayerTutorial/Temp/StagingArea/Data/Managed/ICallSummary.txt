@@ -26,6 +26,7 @@ UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
+UnityEngine.BoxCollider2D::get_size_Injected
 UnityEngine.Camera::GetAllCamerasCount
 UnityEngine.Camera::GetAllCamerasImpl
 UnityEngine.Camera::get_cullingMask
@@ -36,6 +37,7 @@ UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
 UnityEngine.Camera::ScreenPointToRay_Injected
 UnityEngine.Camera::ScreenToViewportPoint_Injected
+UnityEngine.Camera::ScreenToWorldPoint_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
 UnityEngine.Camera::get_main
@@ -243,13 +245,14 @@ UnityEngine.GUIUtility::set_textFieldInput
 UnityEngine.Input::GetButtonDown
 UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetKeyInt
-UnityEngine.Input::GetKeyUpInt
+UnityEngine.Input::GetKeyString
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::GetMouseButtonUp
 UnityEngine.Input::get_mousePresent
 UnityEngine.Input::get_touchSupported
 UnityEngine.Input::get_touchCount
+UnityEngine.Input::GetAxis
 UnityEngine.Input::GetAxisRaw
 UnityEngine.Input::get_compositionString
 UnityEngine.Input::GetTouch_Injected
@@ -348,7 +351,6 @@ UnityEngine.PhysicsScene2D::GetRayIntersectionArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastList_Internal_Injected
 UnityEngine.PhysicsScene2D::Raycast_Internal_Injected
-UnityEngine.PhysicsScene2D::OverlapCircle_Internal_Injected
 UnityEngine.Playables.PlayableHandle::IsValid_Injected
 UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected
 UnityEngine.PlayerConnectionInternal::IsConnected
@@ -418,10 +420,12 @@ UnityEngine.Rigidbody::get_velocity_Injected
 UnityEngine.Rigidbody::set_angularVelocity_Injected
 UnityEngine.Rigidbody::set_velocity_Injected
 UnityEngine.Rigidbody2D::get_angularVelocity
+UnityEngine.Rigidbody2D::get_rotation
 UnityEngine.Rigidbody2D::AddForce_Injected
 UnityEngine.Rigidbody2D::get_velocity_Injected
 UnityEngine.Rigidbody2D::set_angularVelocity
 UnityEngine.Rigidbody2D::set_gravityScale
+UnityEngine.Rigidbody2D::set_rotation
 UnityEngine.Rigidbody2D::set_velocity_Injected
 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.Scene::GetNameInternal
