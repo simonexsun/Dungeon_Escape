@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-
-    public GameObject PlayerPrefab;
+    public GameObject DragonPrefab;
+    public GameObject HumanPrefab;    
     public GameObject GameCanvas;
     public GameObject SceneCamera;
+    public GameObject PlayButton;
+    private bool isDragon = true;
+
     public Text PingText;
     public GameObject disconnectUI;
     private bool Off = false;
@@ -82,11 +86,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SelectDragon()
+    {
+        isDragon = true;
+        Debug.Log("I'm Dragon.");
+        PlayButton.SetActive(true);
+    }
+    public void SelectHuman()
+    {
+        isDragon = false;
+        Debug.Log("I'm Human.");
+        PlayButton.SetActive(true);
+    }
+
     public void SpawnPlayer()
     {
         float randomValue = Random.Range(-1f, 1f);
-
-        PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
+        if(isDragon)
+        {
+            PhotonNetwork.Instantiate(DragonPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
+        }else
+        {
+            PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
+        }
         GameCanvas.SetActive(false);
         SceneCamera.SetActive(false);
     }
