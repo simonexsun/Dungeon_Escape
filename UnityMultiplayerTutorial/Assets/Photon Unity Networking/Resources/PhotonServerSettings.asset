@@ -45,4 +45,5 @@ MonoBehaviour:
   - RequestForPickupTimes
   - Respawn
   - SendMessage
+  - OnCollisionEnter
   DisableAutoOpenWizard: 1

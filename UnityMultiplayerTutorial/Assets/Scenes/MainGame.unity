@@ -1505,6 +1505,8 @@ MonoBehaviour:
     type: 3}
   HumanPrefab: {fileID: 4724468037506078681, guid: f46915299c3c87d48a933794b5e38872,
     type: 3}
+  SlimePrefab: {fileID: 5046086019930856303, guid: 17333cfb2a9a443199a8b65678b98cc2,
+    type: 3}
   GameCanvas: {fileID: 501507501}
   SceneCamera: {fileID: 970856702}
   PlayButton: {fileID: 1210340266}

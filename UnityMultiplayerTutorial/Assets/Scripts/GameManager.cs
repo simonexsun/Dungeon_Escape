@@ -7,17 +7,24 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [Header("Prefabs")]
     public GameObject DragonPrefab;
-    public GameObject HumanPrefab;    
+    public GameObject HumanPrefab;
+    public GameObject SlimePrefab;
+    private int SlimeNums = 5;
+
+    [Header("Game Setting")]
     public GameObject GameCanvas;
     public GameObject SceneCamera;
     public GameObject PlayButton;
     public bool isDragon = true; // localPlayerOnThisComputerClickedTheDragonBox
 
+    [Header("Chat Setting")]
     public Text PingText;
     public GameObject disconnectUI;
     private bool Off = false;
 
+    
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
 
@@ -107,10 +114,22 @@ public class GameManager : MonoBehaviour
             PhotonNetwork.Instantiate(DragonPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }else
         {
+            // spawn 5 slimes per player
+            spawnSlime();
             PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }
         GameCanvas.SetActive(false);
         SceneCamera.SetActive(false);
+    }
+
+    //spawn NPCs for each room
+    private void spawnSlime()
+    {
+        for (int i = 0; i < SlimeNums; i++)
+        {
+            float randomValue = Random.Range(10f, -10f);
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
+        }
     }
 
     public void LeaveRoom()
