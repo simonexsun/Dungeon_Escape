@@ -16,7 +16,7 @@ public class harmHuman : Photon.MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!photonView.isMine)
             return;
