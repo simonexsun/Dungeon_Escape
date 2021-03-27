@@ -5,22 +5,27 @@ using UnityEngine.UI;
 
 public class Dragon : Photon.MonoBehaviour
 {
+    //assets parameters
     public PhotonView photonView;
     public Rigidbody2D rb;
     public Animator anim;
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
+
+    //movement parameters
     public float MoveSpeed;
+    public float turnSpeed;
+    // public Transform playerPos;
+    // public float positionRadius;
 
-    public Transform playerPos;
-    public float positionRadius;
-
+    //attack parameters
     public GameObject BulletObject;
-    public Transform FirePos;
+    public Transform FirePos;    
+    public float bulletCooldown = 0f;
+    private float bulletForce = 1f;
 
     public bool DisableInput = false;
-
 
     private void Awake()
     {
@@ -53,11 +58,13 @@ public class Dragon : Photon.MonoBehaviour
 
         if (Input.GetKey("a"))
         {
-            rb.rotation += 100.0f * Time.deltaTime;
+            // rb.rotation += 100.0f * Time.deltaTime;
+            rb.transform.Rotate(0.0f, 0.0f, turnSpeed * Time.deltaTime, Space.Self);
         }
         if (Input.GetKey("d"))
         {
-            rb.rotation -= 100.0f * Time.deltaTime;
+            // rb.rotation -= 100.0f * Time.deltaTime;
+            rb.transform.Rotate(0.0f, 0.0f, -turnSpeed * Time.deltaTime, Space.Self);
         }
         if (Input.GetKey("w"))
         {
@@ -67,7 +74,7 @@ public class Dragon : Photon.MonoBehaviour
         {
             rb.AddForce(transform.up * MoveSpeed * -1);
         }
-        Debug.Log("Rotated" + rb.rotation);
+        Debug.Log("Rotation" + rb.rotation);
 
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -101,15 +108,17 @@ public class Dragon : Photon.MonoBehaviour
 
 
     private void Shoot()
-    {
+    { 
         if (sr.flipX == false)
         {
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
+            obj.transform.Rotate(0.0f,0.0f,rb.rotation, Space.Self);
         }
 
         if (sr.flipX == true)
         {
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
+            obj.transform.Rotate(0.0f,0.0f,rb.rotation, Space.Self);
             obj.GetComponent<PhotonView>().RPC("ChangeDir_left", PhotonTargets.AllBuffered);
         }
 

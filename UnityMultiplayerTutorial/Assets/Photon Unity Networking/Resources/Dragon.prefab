@@ -197,7 +197,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -226,7 +226,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &2730997543826113343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,11 +443,11 @@ MonoBehaviour:
   sr: {fileID: 2730997543826113336}
   PlayerNameText: {fileID: 8126486365186647418}
   MoveSpeed: 5
-  playerPos: {fileID: 8472064541798024061}
-  positionRadius: 0.3
+  turnSpeed: 80
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 2141290603728859975}
+  bulletCooldown: 0
   DisableInput: 0
 --- !u!1 &2976674287214372140
 GameObject:
