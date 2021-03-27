@@ -59,7 +59,7 @@ public class Health : Photon.MonoBehaviour
     [PunRPC]
     private void Respawn()
     {
-        rb.gravityScale = 1;
+        rb.gravityScale = 0;
         bc.enabled = true;
         sr.enabled = true;
         PlayerCanvas.SetActive(true);
