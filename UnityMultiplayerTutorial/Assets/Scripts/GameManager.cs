@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameCanvas;
     public GameObject SceneCamera;
     public GameObject PlayButton;
-    private bool isDragon = true;
+    public bool isDragon = true; // localPlayerOnThisComputerClickedTheDragonBox
 
     public Text PingText;
     public GameObject disconnectUI;

@@ -197,7 +197,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -226,7 +226,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &2730997543826113343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
     ExtrapolateNumberOfStoredPositions: 1
     DrawErrorGizmo: 1
   m_RotationModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 1
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthAmount: 30
   FillImage: {fileID: 8638117503653139943}
-  plMove: {fileID: 0}
+  playerMove: {fileID: 0}
   rb: {fileID: 2730997543826113338}
   bc: {fileID: 2730997543826113339}
   sr: {fileID: 2730997543826113336}
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2730997543826113333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7753212228e194f29a3c62ee8d37d2d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 34e186b75fe5a411bbbab2754ff3df7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   photonView: {fileID: 2730997543826113343}
@@ -443,8 +443,8 @@ MonoBehaviour:
   sr: {fileID: 2730997543826113336}
   PlayerNameText: {fileID: 8126486365186647418}
   MoveSpeed: 5
-  playerPos: {fileID: 8472064541798024061}
-  positionRadius: 0.3
+  turnSpeed: 80
+  isDragon: 1
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 2141290603728859975}

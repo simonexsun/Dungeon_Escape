@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Health : Photon.MonoBehaviour
 {
     public float HealthAmount;
-    
+
     public Image FillImage;
 
-    public Player plMove;
+    public Player playerMove;
     public Rigidbody2D rb;
     public BoxCollider2D bc;
     public SpriteRenderer sr;
@@ -24,7 +24,8 @@ public class Health : Photon.MonoBehaviour
     }
 
 
-    [PunRPC] public void ReduceHealth(float amount)
+    [PunRPC]
+    public void ReduceHealth(float amount)
     {
         ModifyHealth(amount);
     }
@@ -32,19 +33,19 @@ public class Health : Photon.MonoBehaviour
     private void CheckHealth()
     {
         FillImage.fillAmount = HealthAmount / 100f;
-        
-        if(photonView.isMine && HealthAmount <= 0)
+
+        if (photonView.isMine && HealthAmount <= 0)
         {
-            Debug.Log("shoud work");
+            Debug.Log("player is dead");
             GameManager.Instance.EnableRespawn();
-            plMove.DisableInput = true;
+            playerMove.DisableInput = true;
             this.GetComponent<PhotonView>().RPC("Dead", PhotonTargets.AllBuffered);
         }
     }
 
     public void EnableInput()
     {
-        plMove.DisableInput = false;
+        playerMove.DisableInput = false;
     }
 
     [PunRPC]
@@ -59,7 +60,7 @@ public class Health : Photon.MonoBehaviour
     [PunRPC]
     private void Respawn()
     {
-        rb.gravityScale = 1;
+        rb.gravityScale = 0;
         bc.enabled = true;
         sr.enabled = true;
         PlayerCanvas.SetActive(true);

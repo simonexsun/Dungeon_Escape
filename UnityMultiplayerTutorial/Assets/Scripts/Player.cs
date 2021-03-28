@@ -5,24 +5,22 @@ using UnityEngine.UI;
 
 public class Player : Photon.MonoBehaviour
 {
+    //assets parameters
     public PhotonView photonView;
     public Rigidbody2D rb;
     public Animator anim;
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
+
+    //movement parameters
     public float MoveSpeed;
+    public float turnSpeed;
+    public bool isDragon;
 
-    // public float jumpSpeed;
-    // public float moveInput;
-    // private bool isOnGround;
-    public Transform playerPos;
-    public float positionRadius;
-    // public LayerMask ground;
-    // private float airTimeCount;
-    // public float airTime;
-    // private bool inAir;
+    // public Transform playerPos;
 
+    //attack parameters
     public GameObject BulletObject;
     public Transform FirePos;
 
@@ -53,11 +51,36 @@ public class Player : Photon.MonoBehaviour
 
     private void CheckInput()
     {
+        if (isDragon)
+        {
+            if (Input.GetKey("a"))
+            {
+                // rb.rotation += 100.0f * Time.deltaTime;
+                rb.transform.Rotate(0.0f, 0.0f, turnSpeed * Time.deltaTime, Space.Self);
+            }
+            if (Input.GetKey("d"))
+            {
+                // rb.rotation -= 100.0f * Time.deltaTime;
+                rb.transform.Rotate(0.0f, 0.0f, -turnSpeed * Time.deltaTime, Space.Self);
+            }
+            if (Input.GetKey("w"))
+            {
+                rb.AddForce(transform.up * MoveSpeed);
+            }
+            if (Input.GetKey("s"))
+            {
+                rb.AddForce(transform.up * MoveSpeed * -1);
+            }
+            Debug.Log("Rotation" + rb.rotation);
+        }
+        else
+        {
+            var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
+            transform.position += moveH * MoveSpeed * Time.deltaTime;
+            transform.position += moveV * MoveSpeed * Time.deltaTime;
+        }
 
-        var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-        var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
-        transform.position += moveH * MoveSpeed * Time.deltaTime;
-        transform.position += moveV * MoveSpeed * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -84,31 +107,6 @@ public class Player : Photon.MonoBehaviour
             anim.SetBool("isRunning", false);
         }
 
-        //Original way to flip face direction
-
-        // if (Input.GetKeyDown(KeyCode.A))
-        // {
-        //     photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
-        //     rb.AddForce(transform.right * -1f * MoveSpeed);
-        // }
-
-        // if (Input.GetKeyDown(KeyCode.D))
-        // {
-        //     photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
-        //     rb.AddForce(transform.right * 1f * MoveSpeed);
-        // }
-
-        //Original way to play running animation
-
-        // if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-        // {
-        //     anim.SetBool("isRunning", true);
-        // }
-        // else
-        // {
-        //     anim.SetBool("isRunning", false);
-        // }
-
     }
 
 
@@ -118,11 +116,19 @@ public class Player : Photon.MonoBehaviour
         if (sr.flipX == false)
         {
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
+            if (isDragon)
+            {
+                obj.transform.Rotate(0.0f, 0.0f, rb.rotation, Space.Self);
+            }
         }
 
         if (sr.flipX == true)
         {
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
+            if (isDragon)
+            {
+                obj.transform.Rotate(0.0f, 0.0f, rb.rotation, Space.Self);
+            }
             obj.GetComponent<PhotonView>().RPC("ChangeDir_left", PhotonTargets.AllBuffered);
         }
 
