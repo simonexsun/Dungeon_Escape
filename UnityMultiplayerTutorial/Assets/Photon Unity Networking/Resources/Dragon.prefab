@@ -406,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthAmount: 30
   FillImage: {fileID: 8638117503653139943}
-  plMove: {fileID: 0}
+  playerMove: {fileID: 0}
   rb: {fileID: 2730997543826113338}
   bc: {fileID: 2730997543826113339}
   sr: {fileID: 2730997543826113336}
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2730997543826113333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7753212228e194f29a3c62ee8d37d2d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 34e186b75fe5a411bbbab2754ff3df7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   photonView: {fileID: 2730997543826113343}
@@ -444,10 +444,10 @@ MonoBehaviour:
   PlayerNameText: {fileID: 8126486365186647418}
   MoveSpeed: 5
   turnSpeed: 80
+  isDragon: 1
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 2141290603728859975}
-  bulletCooldown: 0
   DisableInput: 0
 --- !u!1 &2976674287214372140
 GameObject:

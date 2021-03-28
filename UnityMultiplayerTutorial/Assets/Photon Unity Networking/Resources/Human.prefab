@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 315492206635824748}
   - component: {fileID: 8362755223579659567}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Human
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4724468037506078681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e57276722ea9595419d2bd8a0db41b53, type: 3}
+  m_Script: {fileID: 11500000, guid: 34e186b75fe5a411bbbab2754ff3df7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   photonView: {fileID: 4724468037506078675}
@@ -607,8 +607,8 @@ MonoBehaviour:
   sr: {fileID: 4724468037506078676}
   PlayerNameText: {fileID: 1491194120558195094}
   MoveSpeed: 8
-  playerPos: {fileID: 1289169402210097041}
-  positionRadius: 0.3
+  turnSpeed: 0
+  isDragon: 0
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 8773497063672850347}
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthAmount: 30
   FillImage: {fileID: 1411350132398522635}
-  plMove: {fileID: 4724468037506078672}
+  playerMove: {fileID: 4724468037506078672}
   rb: {fileID: 4724468037506078678}
   bc: {fileID: 4724468037506078679}
   sr: {fileID: 4724468037506078676}
@@ -852,7 +852,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
