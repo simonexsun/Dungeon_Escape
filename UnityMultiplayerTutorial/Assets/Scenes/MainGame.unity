@@ -312,6 +312,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622186}
   m_CullTransparentMesh: 0
+--- !u!1 &29371943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29371944}
+  m_Layer: 0
+  m_Name: SlimeSpawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &29371944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29371943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.39, y: -3.05, z: -9.911367}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40030601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,6 +1540,7 @@ MonoBehaviour:
   GameCanvas: {fileID: 501507501}
   SceneCamera: {fileID: 970856702}
   PlayButton: {fileID: 1210340266}
+  isDragon: 1
   PingText: {fileID: 2008399472}
   disconnectUI: {fileID: 900411474}
   PlayerFeed: {fileID: 8983432299938004787, guid: 42fe181210056be4a86b93242e3dc3c6,
@@ -1518,6 +1549,8 @@ MonoBehaviour:
   LocalPlayer: {fileID: 0}
   RespawnTimerText: {fileID: 1622188}
   RespawnMenu: {fileID: 1466233897}
+  SlimePos: {fileID: 29371944}
+  SlimeNums: 5
 --- !u!4 &605709708
 Transform:
   m_ObjectHideFlags: 0

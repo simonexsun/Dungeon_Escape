@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public GameObject DragonPrefab;
     public GameObject HumanPrefab;
     public GameObject SlimePrefab;
-    private int SlimeNums = 5;
 
     [Header("Game Setting")]
     public GameObject GameCanvas;
@@ -33,7 +32,13 @@ public class GameManager : MonoBehaviour
     public GameObject RespawnMenu;
     private float TimerAmount = 5f;
     private bool RunSpawnTimer = false;
-    
+
+    [Header("SlimeSpawn")]
+    public Transform SlimePos;
+    public int SlimeCount = 5;
+    public int SlimeAlive = 5;
+    private int humanCount = 0;
+
     private void Awake()
     {
         Instance = this;
@@ -48,6 +53,12 @@ public class GameManager : MonoBehaviour
         if (RunSpawnTimer)
         {
             StartRespawn();
+        }
+        Debug.Log(humanCount);
+        if(SlimeAlive < humanCount * SlimeCount)
+        {
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.x), Quaternion.identity, 0);
+            SlimeAlive++;
         }
     }
 
@@ -116,6 +127,7 @@ public class GameManager : MonoBehaviour
         {
             // spawn 5 slimes per player
             spawnSlime();
+            humanCount++;
             PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }
         GameCanvas.SetActive(false);
@@ -125,10 +137,10 @@ public class GameManager : MonoBehaviour
     //spawn NPCs for each room
     private void spawnSlime()
     {
-        for (int i = 0; i < SlimeNums; i++)
+        for (int i = 0; i < SlimeCount; i++)
         {
-            float randomValue = Random.Range(10f, -10f);
-            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
+            float randomValue = Random.Range(1f, -1f);
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(SlimePos.transform.position.x * randomValue, SlimePos.transform.position.x * randomValue), Quaternion.identity, 0);
         }
     }
 
