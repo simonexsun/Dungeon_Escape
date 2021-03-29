@@ -7,17 +7,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [Header("Prefabs")]
     public GameObject DragonPrefab;
-    public GameObject HumanPrefab;    
+    public GameObject HumanPrefab;
+    public GameObject SlimePrefab;
+
+    [Header("Game Setting")]
     public GameObject GameCanvas;
     public GameObject SceneCamera;
     public GameObject PlayButton;
     public bool isDragon = true; // localPlayerOnThisComputerClickedTheDragonBox
 
+    [Header("Chat Setting")]
     public Text PingText;
     public GameObject disconnectUI;
     private bool Off = false;
 
+    
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
 
@@ -26,7 +32,13 @@ public class GameManager : MonoBehaviour
     public GameObject RespawnMenu;
     private float TimerAmount = 5f;
     private bool RunSpawnTimer = false;
-    
+
+    [Header("SlimeSpawn")]
+    public Transform SlimePos;
+    public int SlimeCount = 5;
+    public int SlimeAlive = 5;
+    private int humanCount = 0;
+
     private void Awake()
     {
         Instance = this;
@@ -41,6 +53,12 @@ public class GameManager : MonoBehaviour
         if (RunSpawnTimer)
         {
             StartRespawn();
+        }
+        Debug.Log(humanCount);
+        if(SlimeAlive < humanCount * SlimeCount)
+        {
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.x), Quaternion.identity, 0);
+            SlimeAlive++;
         }
     }
 
@@ -107,10 +125,23 @@ public class GameManager : MonoBehaviour
             PhotonNetwork.Instantiate(DragonPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }else
         {
+            // spawn 5 slimes per player
+            spawnSlime();
+            humanCount++;
             PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }
         GameCanvas.SetActive(false);
         SceneCamera.SetActive(false);
+    }
+
+    //spawn NPCs for each room
+    private void spawnSlime()
+    {
+        for (int i = 0; i < SlimeCount; i++)
+        {
+            float randomValue = Random.Range(1f, -1f);
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(SlimePos.transform.position.x * randomValue, SlimePos.transform.position.x * randomValue), Quaternion.identity, 0);
+        }
     }
 
     public void LeaveRoom()

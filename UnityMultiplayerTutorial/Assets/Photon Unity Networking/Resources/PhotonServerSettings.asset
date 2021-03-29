@@ -45,4 +45,7 @@ MonoBehaviour:
   - RequestForPickupTimes
   - Respawn
   - SendMessage
+  - OnCollisionEnter
+  - ReduceSlimeHealth
+  - Recharge
   DisableAutoOpenWizard: 1

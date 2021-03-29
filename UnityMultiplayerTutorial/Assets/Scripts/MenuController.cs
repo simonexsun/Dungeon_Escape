@@ -15,6 +15,7 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] private GameObject StartButton;
 
+
     private void Awake()
     {
         PhotonNetwork.ConnectUsingSettings(VersioName);

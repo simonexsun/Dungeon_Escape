@@ -55,12 +55,21 @@ public class Bullet : Photon.MonoBehaviour
 
         if(target != null && (!target.isMine || target.isSceneView))
         {
-            if(target.tag == "Player")
+            if (target.tag == "Player")
             {
                 target.RPC("ReduceHealth", PhotonTargets.AllBuffered, BulletDamage);
             }
 
             this.GetComponent<PhotonView>().RPC("DestroyObject", PhotonTargets.AllBuffered);
+        }
+        if(target != null)
+        {
+            if (target.tag == "Slime")
+            {
+                target.RPC("ReduceSlimeHealth", PhotonTargets.AllBuffered, BulletDamage);
+                this.GetComponent<PhotonView>().RPC("DestroyObject", PhotonTargets.AllBuffered);
+            }
+            
         }
     }
 
