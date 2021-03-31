@@ -11,6 +11,8 @@ public class ObjectSpawnController : MonoBehaviour
     {
         int rand = Random.Range(0, objects.Length);
         Instantiate(objects[rand], transform.position, Quaternion.identity);
+
+        Debug.Log("spawning objects......");
     }
 
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8687928880994840327}
   - component: {fileID: 2533297455124281043}
   - component: {fileID: 9132135704179040270}
+  - component: {fileID: 7712112376718316145}
   m_Layer: 0
   m_Name: Bush Pre3
   m_TagString: Destructable
@@ -109,3 +110,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.27}
   m_EdgeRadius: 0
+--- !u!208 &7712112376718316145
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6098657552332993368}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.687, y: 1.687, z: 0.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

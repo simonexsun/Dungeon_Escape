@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 1650788170710850657}
   - component: {fileID: 4384528704758491225}
   - component: {fileID: 6287089547244722384}
+  - component: {fileID: 105080944293024704}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Slime
@@ -218,7 +219,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5046086019930856303}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6d4b75a1b9b843fbbdadeb5124a2d73, type: 3}
   m_Name: 
@@ -406,9 +407,9 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5046086019930856303}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1.8
+  m_Radius: 5
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -437,7 +438,23 @@ MonoBehaviour:
   FillImage: {fileID: 8448736867444732776}
   anim: {fileID: 5713475013930901768}
   SlimeRechargeSpeed: 2
-  manager: {fileID: 0}
+--- !u!1818360609 &105080944293024704
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046086019930856303}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &6478516535833552927
 GameObject:
   m_ObjectHideFlags: 0
