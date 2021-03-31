@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AppID: b97470c4-cde9-4af6-bd67-e662816d2a03
   VoiceAppID: 
-  ChatAppID: b97470c4-cde9-4af6-bd67-e662816d2a03
+  ChatAppID: 
   HostType: 1
   PreferredRegion: 0
   EnabledRegions: -1
@@ -41,11 +41,9 @@ MonoBehaviour:
   - PunPickupSimple
   - PunRespawn
   - ReduceHealth
+  - ReduceSlimeHealth
   - RequestForPickupItems
   - RequestForPickupTimes
   - Respawn
   - SendMessage
-  - OnCollisionEnter
-  - ReduceSlimeHealth
-  - Recharge
   DisableAutoOpenWizard: 1
