@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,6 +40,9 @@ public class GameManager : MonoBehaviour
     public int SlimeAlive = 5;
     private int humanCount = 0;
 
+    [Header("NavMesh Setting")]
+    public NavMeshSurface surface;
+
     private void Awake()
     {
         Instance = this;
@@ -54,12 +58,18 @@ public class GameManager : MonoBehaviour
         {
             StartRespawn();
         }
-        Debug.Log(humanCount);
+
         if(SlimeAlive < humanCount * SlimeCount)
         {
-            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.x), Quaternion.identity, 0);
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, 0);
             SlimeAlive++;
         }
+    }
+
+    public void EnableBakeMesh()
+    {
+        surface.BuildNavMesh();
+        Debug.Log("baking mesh....");
     }
 
     public void EnableRespawn()
