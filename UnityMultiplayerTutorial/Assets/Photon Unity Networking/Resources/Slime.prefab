@@ -167,7 +167,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 368543389579951487, guid: 266e7cafcaa104ef18b99027432a187b, type: 3}
+  m_Sprite: {fileID: 209281364020939097, guid: 46b1cba0dfb515745b2b29c6590b750d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,18 +191,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0010035932, y: 0.008743346}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6, y: 3.6}
+    oldSize: {x: 0.5, y: 0.4090909}
     newSize: {x: 3.8, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6, y: 3.6}
+  m_Size: {x: 0.50333995, y: 0.39995086}
   m_EdgeRadius: 0
 --- !u!50 &8798220839842650830
 Rigidbody2D:
@@ -491,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1007, y: 495}
+  m_AnchoredPosition: {x: 1006.99054, y: 495}
   m_SizeDelta: {x: 2014, y: 990}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4662690298672526982
@@ -590,8 +590,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1007.35, y: -492.7}
-  m_SizeDelta: {x: 117.4076, y: 12.4743}
+  m_AnchoredPosition: {x: -1006.991, y: -494.562}
+  m_SizeDelta: {x: 46.0808, y: 6.4716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6407401111052930355
 CanvasRenderer:
@@ -665,8 +665,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
-  m_SizeDelta: {x: 117.4076, y: 12.4743}
+  m_AnchoredPosition: {x: 0, y: 0.00000014901}
+  m_SizeDelta: {x: 45.56, y: 5.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6990260821962642886
 CanvasRenderer:
