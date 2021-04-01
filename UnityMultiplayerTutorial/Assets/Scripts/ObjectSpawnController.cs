@@ -10,9 +10,9 @@ public class ObjectSpawnController : MonoBehaviour
     void Start()
     {
         int rand = Random.Range(0, objects.Length);
-        Instantiate(objects[rand], transform.position, Quaternion.identity);
+        PhotonNetwork.Instantiate(objects[rand].name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, 0);
 
-        Debug.Log("spawning objects......");
+        Debug.Log("spawning objects: " + objects[rand].name);
     }
 
 }
