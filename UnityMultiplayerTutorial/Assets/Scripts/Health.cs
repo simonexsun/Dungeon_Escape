@@ -14,6 +14,9 @@ public class Health : Photon.MonoBehaviour
     public BoxCollider2D bc;
     public SpriteRenderer sr;
     public GameObject PlayerCanvas;
+    public GameObject WLController;
+
+    public bool alive = true;
 
     private void Awake()
     {
@@ -36,6 +39,7 @@ public class Health : Photon.MonoBehaviour
 
         if (photonView.isMine && HealthAmount <= 0)
         {
+            alive = false;
             Debug.Log("player is dead");
             GameManager.Instance.EnableRespawn();
             playerMove.DisableInput = true;

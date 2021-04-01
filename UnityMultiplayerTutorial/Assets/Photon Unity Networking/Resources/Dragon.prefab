@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 5520076241560790490}
   m_Layer: 0
   m_Name: Dragon
-  m_TagString: Player
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -410,6 +410,7 @@ MonoBehaviour:
   bc: {fileID: 2730997543826113339}
   sr: {fileID: 2730997543826113336}
   PlayerCanvas: {fileID: 2976674287214372140}
+  WLController: {fileID: 0}
 --- !u!114 &1186879906316212675
 MonoBehaviour:
   m_ObjectHideFlags: 0
