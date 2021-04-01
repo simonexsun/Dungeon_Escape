@@ -71,7 +71,7 @@ public class Player : Photon.MonoBehaviour
             {
                 rb.AddForce(transform.up * MoveSpeed * -1);
             }
-            Debug.Log("Rotation" + rb.rotation);
+            //Debug.Log("Rotation" + rb.rotation);
         }
         else
         {
