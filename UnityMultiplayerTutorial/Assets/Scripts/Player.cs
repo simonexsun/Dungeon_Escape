@@ -23,8 +23,16 @@ public class Player : Photon.MonoBehaviour
     //attack parameters
     public GameObject BulletObject;
     public Transform FirePos;
+    public Transform FirePosUp;
+    public Transform FirePosDown;
 
     public bool DisableInput = false;
+
+    [Header("direction bools")]
+    public bool faceUp = false;
+    public bool faceDown = false;
+    public bool faceLeft = false;
+    public bool faceRight = false;
 
 
     private void Awake()
@@ -96,6 +104,14 @@ public class Player : Photon.MonoBehaviour
         {
             photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
         }
+        if (Input.GetAxis("Vertical") < 0)
+        {
+            photonView.RPC("FlipDown", PhotonTargets.AllBuffered);
+        }
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            photonView.RPC("FlipUp", PhotonTargets.AllBuffered);
+        }
 
         //play running animation
         if (Input.GetAxis("Horizontal") != 0)
@@ -113,15 +129,42 @@ public class Player : Photon.MonoBehaviour
 
     private void Shoot()
     {
-        GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
+
         if (isDragon)
         {
+            Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
+            GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
             obj.transform.Rotate(0.0f, 0.0f, rb.rotation+90, Space.Self);
         }
         else{
-            if (sr.flipX == false){}
-            if (sr.flipX == true){
+            Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
+            //Checking if human going up or going down, spawn the bullet accordingly
+            if (faceUp)
+            {
+                bulletPos = new Vector2(FirePosUp.transform.position.x, FirePosUp.transform.position.y);
+            }
+            if(faceDown)
+            {
+                bulletPos = new Vector2(FirePosDown.transform.position.x, FirePosDown.transform.position.y);
+            }
+
+            GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
+            
+            if (faceLeft)
+            {
                 obj.GetComponent<PhotonView>().RPC("ChangeDir_left", PhotonTargets.AllBuffered);
+            }
+            if (faceRight)
+            {
+                obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+            }
+            if (faceUp)
+            {
+                obj.GetComponent<PhotonView>().RPC("ChangeDir_up", PhotonTargets.AllBuffered);
+            }
+            if (faceDown)
+            {
+                obj.GetComponent<PhotonView>().RPC("ChangeDir_down", PhotonTargets.AllBuffered);
             }
         }
 
@@ -134,12 +177,40 @@ public class Player : Photon.MonoBehaviour
     private void FlipTrue()
     {
         sr.flipX = true;
+
+        faceLeft = true;
+        faceRight = false;
+        faceUp = false;
+        faceDown = false;
     }
 
     [PunRPC]
     private void FlipFalse()
     {
         sr.flipX = false;
+
+        faceRight = true;
+        faceLeft = false;
+        faceUp = false;
+        faceDown = false;
+    }
+
+    [PunRPC]
+    private void FlipUp()
+    {
+        faceUp = true;
+        faceLeft = true;
+        faceRight = false;
+        faceDown = false;
+    }
+
+    [PunRPC]
+    private void FlipDown()
+    {
+        faceDown = true;
+        faceLeft = true;
+        faceRight = false;
+        faceUp = false;
     }
 
 }

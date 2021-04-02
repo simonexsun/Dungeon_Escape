@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Bullet : Photon.MonoBehaviour
 {
-    public bool MoveDir = false; //false (right), true (left)
+    private bool MoveLeft = false; //false (right), true (left)
+    private bool MoveRight = false;
+    private bool MoveUp = false; // false (down), true(up);
+    private bool MoveDown = false;
 
     public float MoveSpeed;
 
@@ -28,9 +31,37 @@ public class Bullet : Photon.MonoBehaviour
     [PunRPC]
     public void ChangeDir_left()
     {
-        MoveDir = true;
+        MoveLeft = true;
+        MoveRight = false;
+        MoveUp = false;
+        MoveDown = false;
     }
 
+    [PunRPC]
+    public void ChangeDir_up()
+    {
+        MoveUp = true;
+        MoveDown = false;
+        MoveLeft = false;
+        MoveRight = false;
+    }
+    [PunRPC]
+    public void ChangeDir_right()
+    {
+        MoveRight = true;
+        MoveLeft = false;
+        MoveUp = false;
+        MoveDown = false;
+    }
+
+    [PunRPC]
+    public void ChangeDir_down()
+    {
+        MoveDown = true;
+        MoveRight = false;
+        MoveUp = false;
+        MoveLeft = false;
+    }
 
     [PunRPC]
     public void DestroyObject()
@@ -40,10 +71,22 @@ public class Bullet : Photon.MonoBehaviour
 
     private void Update()
     {
-        if (!MoveDir)
+        if (MoveRight)
+        {
             transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
-        else
+        }
+        if (MoveLeft)
+        {
             transform.Translate(Vector2.left * MoveSpeed * Time.deltaTime);
+        }
+        if (MoveUp)
+        {
+            transform.Translate(Vector2.up * MoveSpeed * Time.deltaTime);
+        }
+        if (MoveDown)
+        {
+            transform.Translate(Vector2.down * MoveSpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

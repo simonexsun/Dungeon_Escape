@@ -18,9 +18,12 @@ public class WinLoss : MonoBehaviour
 
     void Update()
     {
-        CheckWL();
-        timer -= 1 * Time.deltaTime;
-        timerText.text = "Time: " + timer.ToString("F0"); 
+        if (GameManager.Instance.dragonCount > 0 && GameManager.Instance.humanCount > 0)
+        {
+            CheckWL();
+            timer -= 1 * Time.deltaTime;
+        }
+        timerText.text = "Time: " + timer.ToString("F0");
     }
 
     public void CheckWL()

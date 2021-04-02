@@ -38,7 +38,10 @@ public class GameManager : MonoBehaviour
     public Transform SlimePos;
     public int SlimeCount = 5;
     public int SlimeAlive = 5;
-    private int humanCount = 0;
+    public int humanCount = 0;
+
+    [Header("DragonSpawn")]
+    public int dragonCount = 0;
 
     [Header("NavMesh Setting")]
     public NavMeshSurface surface;
@@ -63,6 +66,7 @@ public class GameManager : MonoBehaviour
         {
             PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, 0);
             SlimeAlive++;
+            Debug.Log("new slime is spawning");
         }
     }
 
@@ -132,6 +136,7 @@ public class GameManager : MonoBehaviour
         float randomValue = Random.Range(-1f, 1f);
         if(isDragon)
         {
+            dragonCount++;
             PhotonNetwork.Instantiate(DragonPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }else
         {
