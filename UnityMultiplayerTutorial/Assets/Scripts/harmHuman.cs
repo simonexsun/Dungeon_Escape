@@ -22,7 +22,7 @@ public class harmHuman : Photon.MonoBehaviour
         //if (!photonView.isMine)
         //    return;
 
-        Debug.Log("collide with humnannn");
+        
 
         PhotonView target = collision.gameObject.GetComponent<PhotonView>();
 

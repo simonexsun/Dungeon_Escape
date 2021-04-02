@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class WinLoss : MonoBehaviour
+public class WinLoss : Photon.MonoBehaviour
 {
     public GameObject[] humans;
     public float timer;
@@ -18,6 +18,9 @@ public class WinLoss : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Human:" + GameManager.Instance.humanCount);
+        Debug.Log("Dragon:" + GameManager.Instance.dragonCount);
+
         if (GameManager.Instance.dragonCount > 0 && GameManager.Instance.humanCount > 0)
         {
             CheckWL();

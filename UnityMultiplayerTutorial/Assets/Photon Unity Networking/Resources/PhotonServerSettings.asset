@@ -51,4 +51,6 @@ MonoBehaviour:
   - ChangeDir_up
   - ChangeDir_down
   - ChangeDir_right
+  - addDragon
+  - addHuman
   DisableAutoOpenWizard: 1
