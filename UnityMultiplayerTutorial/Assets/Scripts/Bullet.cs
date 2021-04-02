@@ -35,6 +35,7 @@ public class Bullet : Photon.MonoBehaviour
         MoveRight = false;
         MoveUp = false;
         MoveDown = false;
+        Debug.Log("palyer is facing left");
     }
 
     [PunRPC]
@@ -44,6 +45,7 @@ public class Bullet : Photon.MonoBehaviour
         MoveDown = false;
         MoveLeft = false;
         MoveRight = false;
+        Debug.Log("palyer is facing up");
     }
     [PunRPC]
     public void ChangeDir_right()
@@ -52,6 +54,7 @@ public class Bullet : Photon.MonoBehaviour
         MoveLeft = false;
         MoveUp = false;
         MoveDown = false;
+        Debug.Log("palyer is facing right");
     }
 
     [PunRPC]
@@ -61,6 +64,7 @@ public class Bullet : Photon.MonoBehaviour
         MoveRight = false;
         MoveUp = false;
         MoveLeft = false;
+        Debug.Log("palyer is facing down");
     }
 
     [PunRPC]
@@ -71,22 +75,27 @@ public class Bullet : Photon.MonoBehaviour
 
     private void Update()
     {
-        if (MoveRight)
-        {
-            transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
-        }
-        if (MoveLeft)
-        {
-            transform.Translate(Vector2.left * MoveSpeed * Time.deltaTime);
-        }
-        if (MoveUp)
-        {
-            transform.Translate(Vector2.up * MoveSpeed * Time.deltaTime);
-        }
-        if (MoveDown)
-        {
-            transform.Translate(Vector2.down * MoveSpeed * Time.deltaTime);
-        }
+        transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
+        // if (MoveRight)
+        // {
+        //     transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
+        //     Debug.Log("Bullet is moving right");
+        // }
+        // if (MoveLeft)
+        // {
+        //     transform.Translate(Vector2.left * MoveSpeed * Time.deltaTime);
+        //     Debug.Log("Bullet is moving left");
+        // }
+        // if (MoveUp)
+        // {
+        //     transform.Translate(Vector2.up * MoveSpeed * Time.deltaTime);
+        //     Debug.Log("Bullet is moving up");
+        // }
+        // if (MoveDown)
+        // {
+        //     transform.Translate(Vector2.down * MoveSpeed * Time.deltaTime);
+        //     Debug.Log("Bullet is moving down");
+        // }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -96,7 +105,7 @@ public class Bullet : Photon.MonoBehaviour
 
         PhotonView target = collision.gameObject.GetComponent<PhotonView>();
 
-        if(target != null && (!target.isMine || target.isSceneView))
+        if (target != null && (!target.isMine || target.isSceneView))
         {
             if (target.tag == "Player")
             {
@@ -105,14 +114,14 @@ public class Bullet : Photon.MonoBehaviour
 
             this.GetComponent<PhotonView>().RPC("DestroyObject", PhotonTargets.AllBuffered);
         }
-        if(target != null)
+        if (target != null)
         {
             if (target.tag == "Slime")
             {
                 target.RPC("ReduceSlimeHealth", PhotonTargets.AllBuffered, BulletDamage);
                 this.GetComponent<PhotonView>().RPC("DestroyObject", PhotonTargets.AllBuffered);
             }
-            
+
         }
     }
 

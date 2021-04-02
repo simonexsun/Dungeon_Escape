@@ -49,4 +49,6 @@ MonoBehaviour:
   - FlipDown
   - FlipUp
   - ChangeDir_up
+  - ChangeDir_down
+  - ChangeDir_right
   DisableAutoOpenWizard: 1

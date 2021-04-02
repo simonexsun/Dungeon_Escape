@@ -135,36 +135,33 @@ public class Player : Photon.MonoBehaviour
             Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
             obj.transform.Rotate(0.0f, 0.0f, rb.rotation+90, Space.Self);
+            // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
         }
         else{
             Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
             //Checking if human going up or going down, spawn the bullet accordingly
-            if (faceUp)
-            {
-                bulletPos = new Vector2(FirePosUp.transform.position.x, FirePosUp.transform.position.y);
-            }
-            if(faceDown)
-            {
-                bulletPos = new Vector2(FirePosDown.transform.position.x, FirePosDown.transform.position.y);
-            }
-
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
             
             if (faceLeft)
             {
-                obj.GetComponent<PhotonView>().RPC("ChangeDir_left", PhotonTargets.AllBuffered);
+                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                obj.transform.Rotate(0.0f, 0.0f, 180, Space.Self);
             }
             if (faceRight)
             {
-                obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
             }
             if (faceUp)
             {
-                obj.GetComponent<PhotonView>().RPC("ChangeDir_up", PhotonTargets.AllBuffered);
+                // bulletPos = new Vector2(FirePosUp.transform.position.x, FirePosUp.transform.position.y);
+                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                obj.transform.Rotate(0.0f, 0.0f, -90, Space.Self);
             }
             if (faceDown)
-            {
-                obj.GetComponent<PhotonView>().RPC("ChangeDir_down", PhotonTargets.AllBuffered);
+            {             
+                // bulletPos = new Vector2(FirePosDown.transform.position.x, FirePosDown.transform.position.y);
+                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                obj.transform.Rotate(0.0f, 0.0f, 90, Space.Self);
             }
         }
 

@@ -234,36 +234,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: New Text
---- !u!1 &741986632752888798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6156897972583809232}
-  m_Layer: 0
-  m_Name: FirePosUp
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6156897972583809232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741986632752888798}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.001, y: 0.158, z: -0.029696941}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children: []
-  m_Father: {fileID: 4724468037506078677}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &895179781433236591
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2966672260029410960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.162, y: 0.002, z: 0}
+  m_LocalPosition: {x: 0.015, y: -0.113, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4724468037506078677}
@@ -517,8 +487,6 @@ Transform:
   - {fileID: 5920525288002037167}
   - {fileID: 8773497063672850347}
   - {fileID: 1289169402210097041}
-  - {fileID: 6156897972583809232}
-  - {fileID: 677342821539998630}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -644,10 +612,13 @@ MonoBehaviour:
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 8773497063672850347}
-  FirePosUp: {fileID: 6156897972583809232}
-  FirePosDown: {fileID: 677342821539998630}
+  FirePosUp: {fileID: 0}
+  FirePosDown: {fileID: 0}
   DisableInput: 0
   faceUp: 0
+  faceDown: 0
+  faceLeft: 0
+  faceRight: 0
 --- !u!114 &4724468037506078675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +803,6 @@ MonoBehaviour:
   bc: {fileID: 4724468037506078679}
   sr: {fileID: 4724468037506078676}
   PlayerCanvas: {fileID: 5564646025579688384}
-  WLController: {fileID: 0}
   alive: 1
 --- !u!114 &8362755223579659567
 MonoBehaviour:
@@ -930,36 +900,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4724468038950539374}
   m_Enabled: 1
---- !u!1 &4788969041867959418
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 677342821539998630}
-  m_Layer: 0
-  m_Name: FirePosDown
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &677342821539998630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4788969041867959418}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.001, y: -0.232, z: -0.029696941}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children: []
-  m_Father: {fileID: 4724468037506078677}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5564646025579688384
 GameObject:
   m_ObjectHideFlags: 0
