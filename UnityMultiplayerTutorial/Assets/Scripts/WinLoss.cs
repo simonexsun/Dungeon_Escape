@@ -9,6 +9,9 @@ public class WinLoss : MonoBehaviour
     public GameObject[] humans;
     public float timer;
     public Text timerText;
+    public GameObject bossWinCanvas;   
+    public GameObject humanWinCanvas;
+
 
     // Update is called once per frame
     private void Start()
@@ -48,11 +51,13 @@ public class WinLoss : MonoBehaviour
 
     public void BossWin()
     {
-        SceneManager.LoadScene("BossWin", LoadSceneMode.Single);
+        bossWinCanvas.SetActive(true);
+        // SceneManager.LoadScene("BossWin", LoadSceneMode.Single);
     }
 
     public void HumansWin()
-    {
-        SceneManager.LoadScene("HumanWin", LoadSceneMode.Single);
+    {        
+        humanWinCanvas.SetActive(true);
+        // SceneManager.LoadScene("HumanWin", LoadSceneMode.Single);
     }
 }

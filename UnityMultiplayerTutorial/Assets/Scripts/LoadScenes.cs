@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class LoadScenes : MonoBehaviour
 {
     public void ReturnToMainMenu()
     {
-        Debug.Log("returning...");
+        Debug.Log("Returning to main menu.");
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }
