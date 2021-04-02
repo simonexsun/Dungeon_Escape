@@ -23,7 +23,12 @@ public class slimeMovement : Photon.MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(target.position);
-        anim.SetBool("isRunning", true);
+        if (this){
+            agent.SetDestination(target.position);
+            anim.SetBool("isRunning", true);
+        }
+        else{
+            Debug.Log("slime is null");
+        }
     }
 }

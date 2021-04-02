@@ -38,7 +38,10 @@ public class GameManager : MonoBehaviour
     public Transform SlimePos;
     public int SlimeCount = 5;
     public int SlimeAlive = 5;
-    private int humanCount = 0;
+    public int humanCount = 0;
+
+    [Header("DragonSpawn")]
+    public int dragonCount = 0;
 
     [Header("NavMesh Setting")]
     public NavMeshSurface surface;
@@ -63,6 +66,7 @@ public class GameManager : MonoBehaviour
         {
             PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, 0);
             SlimeAlive++;
+            Debug.Log("new slime is spawning");
         }
     }
 
@@ -132,12 +136,13 @@ public class GameManager : MonoBehaviour
         float randomValue = Random.Range(-1f, 1f);
         if(isDragon)
         {
+            this.GetComponent<PhotonView>().RPC("addDragon", PhotonTargets.AllBuffered);
             PhotonNetwork.Instantiate(DragonPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }else
         {
             // spawn 5 slimes per player
             spawnSlime();
-            humanCount++;
+            this.GetComponent<PhotonView>().RPC("addHuman", PhotonTargets.AllBuffered);
             PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }
         GameCanvas.SetActive(false);
@@ -177,5 +182,15 @@ public class GameManager : MonoBehaviour
         obj.GetComponent<Text>().text = player.name + " left the game";
         obj.GetComponent<Text>().color = Color.red;
     }
-    
+
+    [PunRPC]
+    private void addDragon()
+    {
+        dragonCount++;
+    }
+    [PunRPC]
+    private void addHuman()
+    {
+        humanCount++;
+    }
 }

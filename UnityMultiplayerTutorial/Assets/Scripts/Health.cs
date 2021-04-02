@@ -15,6 +15,8 @@ public class Health : Photon.MonoBehaviour
     public SpriteRenderer sr;
     public GameObject PlayerCanvas;
 
+    public bool alive = true;
+
     private void Awake()
     {
         if (photonView.isMine)
@@ -36,9 +38,10 @@ public class Health : Photon.MonoBehaviour
 
         if (photonView.isMine && HealthAmount <= 0)
         {
+            alive = false;
             Debug.Log("player is dead");
-            GameManager.Instance.EnableRespawn();
-            playerMove.DisableInput = true;
+            // GameManager.Instance.EnableRespawn();
+            // playerMove.DisableInput = true;
             this.GetComponent<PhotonView>().RPC("Dead", PhotonTargets.AllBuffered);
         }
     }
@@ -51,10 +54,12 @@ public class Health : Photon.MonoBehaviour
     [PunRPC]
     private void Dead()
     {
-        rb.gravityScale = 0;
-        bc.enabled = false;
-        sr.enabled = false;
-        PlayerCanvas.SetActive(false);
+        bc.enabled = false; 
+        sr.enabled = false; //disable sprite display
+        PlayerCanvas.SetActive(false); //diable name tag and health bar display
+        Color tmp = sr.color;
+        tmp.a = 100f;
+        sr.color = tmp; //make the sprite transparent 
     }
 
     [PunRPC]

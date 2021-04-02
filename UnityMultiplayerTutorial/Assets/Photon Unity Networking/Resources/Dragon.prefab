@@ -59,7 +59,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 5520076241560790490}
   m_Layer: 0
   m_Name: Dragon
-  m_TagString: Player
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: b79f40fb3a90f42d3948b6e8547d8941, type: 3}
+  m_Sprite: {fileID: -7789076153830851661, guid: 04ccd01b5a28a124daf23d7a2995cc94,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,24 +187,24 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2730997543826113333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004312694, y: 0.052221186}
+  m_Offset: {x: 0.005702138, y: -0.047927156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.5714285, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6815771, y: 0.52095914}
+  m_Size: {x: 1.5829127, y: 0.7212558}
   m_EdgeRadius: 0
 --- !u!50 &2730997543826113338
 Rigidbody2D:
@@ -410,6 +411,7 @@ MonoBehaviour:
   bc: {fileID: 2730997543826113339}
   sr: {fileID: 2730997543826113336}
   PlayerCanvas: {fileID: 2976674287214372140}
+  alive: 1
 --- !u!114 &1186879906316212675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,12 +444,18 @@ MonoBehaviour:
   sr: {fileID: 2730997543826113336}
   PlayerNameText: {fileID: 8126486365186647418}
   MoveSpeed: 5
-  turnSpeed: 80
+  turnSpeed: 50
   isDragon: 1
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 2141290603728859975}
+  FirePosUp: {fileID: 0}
+  FirePosDown: {fileID: 0}
   DisableInput: 0
+  faceUp: 0
+  faceDown: 0
+  faceLeft: 0
+  faceRight: 0
 --- !u!1 &2976674287214372140
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5574719520838924924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2730997543826113337}
@@ -644,7 +652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.498}
+  m_AnchoredPosition: {x: 0, y: 0.634}
   m_SizeDelta: {x: 309.1657, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8737601224216780973
@@ -724,7 +732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.043, y: 0.836}
+  m_AnchoredPosition: {x: 0.043, y: 0.972}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7239216915295947132
@@ -879,7 +887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.339}
+  m_AnchoredPosition: {x: 0, y: 0.475}
   m_SizeDelta: {x: 117.4076, y: 12.4743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8234944686412732994
