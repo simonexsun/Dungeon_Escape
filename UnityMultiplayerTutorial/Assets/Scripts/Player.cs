@@ -113,23 +113,16 @@ public class Player : Photon.MonoBehaviour
 
     private void Shoot()
     {
-        if (sr.flipX == false)
+        GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
+        if (isDragon)
         {
-            GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
-            if (isDragon)
-            {
-                obj.transform.Rotate(0.0f, 0.0f, rb.rotation, Space.Self);
-            }
+            obj.transform.Rotate(0.0f, 0.0f, rb.rotation+90, Space.Self);
         }
-
-        if (sr.flipX == true)
-        {
-            GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, new Vector2(FirePos.transform.position.x, FirePos.transform.position.y), Quaternion.identity, 0);
-            if (isDragon)
-            {
-                obj.transform.Rotate(0.0f, 0.0f, rb.rotation, Space.Self);
+        else{
+            if (sr.flipX == false){}
+            if (sr.flipX == true){
+                obj.GetComponent<PhotonView>().RPC("ChangeDir_left", PhotonTargets.AllBuffered);
             }
-            obj.GetComponent<PhotonView>().RPC("ChangeDir_left", PhotonTargets.AllBuffered);
         }
 
         anim.SetTrigger("shootTrigger");
