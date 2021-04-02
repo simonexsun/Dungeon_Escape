@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     [Header("SlimeSpawn")]
     public Transform SlimePos;
-    public int SlimeCount = 5; // spawn 5 slimes per player
+    public int SlimeCount = 5;
     public int SlimeAlive = 5;
     private int humanCount = 0;
 
@@ -133,7 +133,9 @@ public class GameManager : MonoBehaviour
         if(isDragon)
         {
             PhotonNetwork.Instantiate(DragonPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
-        }else{
+        }else
+        {
+            // spawn 5 slimes per player
             spawnSlime();
             humanCount++;
             PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
