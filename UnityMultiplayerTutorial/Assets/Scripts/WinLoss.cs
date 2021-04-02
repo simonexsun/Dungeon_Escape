@@ -36,7 +36,7 @@ public class WinLoss : MonoBehaviour
             }
             else
             {
-                Debug.Log("some are still alive");
+                // Debug.Log("some are still alive");
             }
         }
 
@@ -48,11 +48,15 @@ public class WinLoss : MonoBehaviour
 
     public void BossWin()
     {
-        SceneManager.LoadScene("BossWin", LoadSceneMode.Single);
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LoadLevel("BossWin");
+        // SceneManager.LoadScene("BossWin", LoadSceneMode.Single);
     }
 
     public void HumansWin()
     {
-        SceneManager.LoadScene("HumanWin", LoadSceneMode.Single);
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LoadLevel("HumanWin");
+        // SceneManager.LoadScene("HumanWin", LoadSceneMode.Single);
     }
 }

@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class LoadScenes : MonoBehaviour
 {
-    public void ReturnToMainMenu()
+    public void returnToMainMenu()
     {
-        Debug.Log("returning...");
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        PhotonNetwork.LoadLevel(0);
+        Debug.Log("return to main menu");
+        // SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }
