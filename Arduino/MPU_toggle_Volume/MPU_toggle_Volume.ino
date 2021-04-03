@@ -46,11 +46,12 @@ void loop() {
 
   //Toggle button
   int bntValue = digitalRead(bntPin); //1 = unpressed, 0 = pressed
-  //  if (previousBntValue == 0 && bntValue == 1) { //press and release onece
-  //    Serial.println("button pressed");
-  //    takeover = !takeover;
-  //  }
-  //  previousBntValue = bntValue;
+  if (previousBntValue == 0 && bntValue == 1) { //toggled from on to off once
+    Serial.println("toggle switched");
+    Keyboard.press(KEY_ESC);
+    Keyboard.release(KEY_ESC);
+  }
+  previousBntValue = bntValue;
   if (bntValue == 0) {
     Serial.println("toggle on");
     Keyboard.press(KEY_RETURN);
@@ -58,8 +59,6 @@ void loop() {
     takeover = true;
   } else {
     Serial.println("toggle off");
-    Keyboard.press(KEY_ESC);
-    Keyboard.release(KEY_ESC);
     takeover = false;
   }
   if (takeover) {
