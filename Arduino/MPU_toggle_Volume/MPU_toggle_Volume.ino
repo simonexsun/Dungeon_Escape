@@ -46,16 +46,20 @@ void loop() {
 
   //Toggle button
   int bntValue = digitalRead(bntPin); //1 = unpressed, 0 = pressed
-  if (previousBntValue == 0 && bntValue == 1) { //toggled from on to off once
-    Serial.println("toggle switched");
+  if (previousBntValue == 1 && bntValue == 0) { //toggled from off to on once
+    Serial.println("toggle switched on");
+    Keyboard.press(KEY_RETURN);
+    Keyboard.release(KEY_RETURN);
+  } if (previousBntValue == 0 && bntValue == 1) { //toggled from on to off once
+    Serial.println("toggle switched off");
     Keyboard.press(KEY_ESC);
     Keyboard.release(KEY_ESC);
   }
+
   previousBntValue = bntValue;
+
   if (bntValue == 0) {
     Serial.println("toggle on");
-    Keyboard.press(KEY_RETURN);
-    Keyboard.release(KEY_RETURN);
     takeover = true;
   } else {
     Serial.println("toggle off");
@@ -66,59 +70,32 @@ void loop() {
     sensors_event_t a, g, temp;
     mpu.getEvent(&a, &g, &temp);
 
-    /* Print out the values */
-    /*
-      Serial.print("Acceleration X: ");
-      Serial.print(a.acceleration.x);
-      Serial.print(", Y: ");
-      Serial.print(a.acceleration.y);
-      Serial.print(", Z: ");
-      Serial.print(a.acceleration.z);
-      Serial.println(" m/s^2");
-
-      Serial.print("Rotation X: ");
-      Serial.print(g.gyro.x);
-      Serial.print(", Y: ");
-      Serial.print(g.gyro.y);
-      Serial.print(", Z: ");
-      Serial.print(g.gyro.z);
-      Serial.println(" rad/s");
-    */
     Serial.print("Volumn: ");
     Serial.print(voiceValue);
     Serial.println(" dB");
-    // x position is reversed to match the mouse movement.
-
-    //debugging
-    //Serial.println("moving mouse");
-    //Serial.print("mouseX.move: ");
-    //Serial.print(-g.gyro.x - a.acceleration.x);
-    //Serial.print("mouseY.move: ");
-    //Serial.println(g.gyro.y + a.acceleration.y);
 
     float xAxis = -g.gyro.x - a.acceleration.x;  // x position is reversed to match the mouse movement.
     float yAxis = g.gyro.y + a.acceleration.y;
 
     //make the gyroscope movement to control the arrow keys
     if (xAxis < 0) {
-      Keyboard.press(KEY_LEFT_ARROW);
-      Keyboard.release(KEY_LEFT_ARROW);
+      Keyboard.press('A');
+      Keyboard.release('A');
       Serial.println("left");
     } else if (xAxis > 0) {
-      Keyboard.press(KEY_RIGHT_ARROW);
-      Keyboard.release(KEY_RIGHT_ARROW);
+      Keyboard.press('D');
+      Keyboard.release('D');
       Serial.println("right");
-    }
-    if (yAxis < 0) {
-      Keyboard.press(KEY_UP_ARROW);
-      Keyboard.release(KEY_UP_ARROW);
+    } else if (yAxis < 0) {
+      Keyboard.press('W');
+      Keyboard.release('W');
       Serial.println("up");
     } else if (yAxis > 0) {
-      Keyboard.press(KEY_DOWN_ARROW);
-      Keyboard.release(KEY_DOWN_ARROW);
+      Keyboard.press('S');
+      Keyboard.release('S');
       Serial.println("down");
 
     }
   }
-  delay(200);
+  delay(100);
 }
