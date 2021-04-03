@@ -23,8 +23,6 @@ public class Player : Photon.MonoBehaviour
     //attack parameters
     public GameObject BulletObject;
     public Transform FirePos;
-    public Transform FirePosUp;
-    public Transform FirePosDown;
 
     public bool DisableInput = false;
 
