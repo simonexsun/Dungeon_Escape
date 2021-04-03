@@ -63,12 +63,10 @@ public class Player : Photon.MonoBehaviour
         {
             if (Input.GetKey("a"))
             {
-                // rb.rotation += 100.0f * Time.deltaTime;
                 rb.transform.Rotate(0.0f, 0.0f, turnSpeed * Time.deltaTime, Space.Self);
             }
             if (Input.GetKey("d"))
             {
-                // rb.rotation -= 100.0f * Time.deltaTime;
                 rb.transform.Rotate(0.0f, 0.0f, -turnSpeed * Time.deltaTime, Space.Self);
             }
             if (Input.GetKey("w"))
@@ -83,10 +81,26 @@ public class Player : Photon.MonoBehaviour
         }
         else
         {
-            var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-            var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
-            transform.position += moveH * MoveSpeed * Time.deltaTime;
-            transform.position += moveV * MoveSpeed * Time.deltaTime;
+            // var moveH = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            // var moveV = new Vector3(0, Input.GetAxis("Vertical"), 0);
+            // transform.position += moveH * MoveSpeed * Time.deltaTime;
+            // transform.position += moveV * MoveSpeed * Time.deltaTime;
+            if (Input.GetKey("a"))
+            {
+                transform.position += transform.right * Time.deltaTime * MoveSpeed * -1;
+            }
+            if (Input.GetKey("d"))
+            {
+                transform.position += transform.right * Time.deltaTime * MoveSpeed;
+            }
+            if (Input.GetKey("w"))
+            {
+                transform.position += transform.up * Time.deltaTime * MoveSpeed;
+            }
+            if (Input.GetKey("s"))
+            {
+                transform.position += transform.up * Time.deltaTime * MoveSpeed * -1;
+            }
         }
 
 
@@ -134,14 +148,15 @@ public class Player : Photon.MonoBehaviour
         {
             Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
-            obj.transform.Rotate(0.0f, 0.0f, rb.rotation+90, Space.Self);
+            obj.transform.Rotate(0.0f, 0.0f, rb.rotation + 90, Space.Self);
             // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
         }
-        else{
+        else
+        {
             Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
             //Checking if human going up or going down, spawn the bullet accordingly
             GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
-            
+
             if (faceLeft)
             {
                 // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
@@ -158,7 +173,7 @@ public class Player : Photon.MonoBehaviour
                 obj.transform.Rotate(0.0f, 0.0f, -90, Space.Self);
             }
             if (faceDown)
-            {             
+            {
                 // bulletPos = new Vector2(FirePosDown.transform.position.x, FirePosDown.transform.position.y);
                 // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
                 obj.transform.Rotate(0.0f, 0.0f, 90, Space.Self);
