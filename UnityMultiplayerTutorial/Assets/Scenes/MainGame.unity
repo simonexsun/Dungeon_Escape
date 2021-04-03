@@ -941,7 +941,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: Turn on controller to Start Game
 --- !u!222 &182906782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2457,18 +2457,19 @@ MonoBehaviour:
   GameCanvas: {fileID: 501507501}
   SceneCamera: {fileID: 970856702}
   PlayButton: {fileID: 1210340266}
-  isDragon: 1
+  StartPlayButton: {fileID: 1210340268}
   PingText: {fileID: 2008399472}
   disconnectUI: {fileID: 900411474}
   PlayerFeed: {fileID: 8983432299938004787, guid: 42fe181210056be4a86b93242e3dc3c6,
     type: 3}
   FeedGrid: {fileID: 223062291}
-  LocalPlayer: {fileID: 0}
   RespawnTimerText: {fileID: 1622188}
   RespawnMenu: {fileID: 1466233897}
   SlimePos: {fileID: 29371944}
   SlimeCount: 5
   SlimeAlive: 5
+  LocalPlayer: {fileID: 0}
+  isDragon: 1
   humanCount: 0
   dragonCount: 0
   surface: {fileID: 789850290}

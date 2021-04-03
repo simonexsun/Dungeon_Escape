@@ -17,18 +17,15 @@ public class GameManager : MonoBehaviour
     public GameObject GameCanvas;
     public GameObject SceneCamera;
     public GameObject PlayButton;
-    public bool isDragon = true; // localPlayerOnThisComputerClickedTheDragonBox
+    public Button StartPlayButton;
 
-    [Header("Chat Setting")]
+    [Header("Player Feed Setting")]
     public Text PingText;
     public GameObject disconnectUI;
     private bool Off = false;
-
-    
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
 
-    [HideInInspector]public GameObject LocalPlayer;
     public Text RespawnTimerText;
     public GameObject RespawnMenu;
     private float TimerAmount = 5f;
@@ -38,9 +35,11 @@ public class GameManager : MonoBehaviour
     public Transform SlimePos;
     public int SlimeCount = 5;
     public int SlimeAlive = 5;
-    public int humanCount = 0;
 
-    [Header("DragonSpawn")]
+    [Header("PlayerSpawn")]
+    [HideInInspector]public GameObject LocalPlayer;
+    public bool isDragon = true; // localPlayerOnThisComputerClickedTheDragonBox
+    public int humanCount = 0;
     public int dragonCount = 0;
 
     [Header("NavMesh Setting")]
@@ -107,6 +106,9 @@ public class GameManager : MonoBehaviour
 
     private void CheckInput()
     {
+        if (Input.GetKeyDown(KeyCode.Return)){
+            StartPlayButton.onClick.Invoke();
+        }
         if(Off && Input.GetKeyDown(KeyCode.Escape))
         {
             disconnectUI.SetActive(false);
