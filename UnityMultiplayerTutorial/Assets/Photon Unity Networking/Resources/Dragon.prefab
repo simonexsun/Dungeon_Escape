@@ -443,8 +443,8 @@ MonoBehaviour:
   PlayerCamera: {fileID: 2730997541982274690}
   sr: {fileID: 2730997543826113336}
   PlayerNameText: {fileID: 8126486365186647418}
-  MoveSpeed: 5
-  turnSpeed: 50
+  MoveSpeed: 10
+  turnSpeed: 10
   isDragon: 1
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
