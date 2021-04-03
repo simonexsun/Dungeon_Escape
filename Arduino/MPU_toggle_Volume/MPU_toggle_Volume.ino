@@ -87,6 +87,12 @@ void loop() {
     } else {
       Keyboard.releaseAll();
     }
+
+    /*make the valume sensor values to control the space bar*/
+    if (voiceValue > 45) {
+      Keyboard.press(' ');
+      Keyboard.release(' ');
+    }
   }
   delay(100);
 }
@@ -102,7 +108,7 @@ void checkSwitch() {
     Serial.println("toggle switched off");
     Keyboard.press(KEY_ESC);
     Keyboard.release(KEY_ESC);
-  }
+  }                 
 
   previousBntValue = bntValue;
 
