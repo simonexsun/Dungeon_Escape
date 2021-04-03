@@ -41,9 +41,63 @@ void setup(void) {
 }
 
 void loop() {
-  //read the sound sensor
-  voiceValue = analogRead(voicePin);
+  /*check switch to turn on/off controller*/
+  checkSwitch();
 
+  if (takeover) {
+    /* Get new sensor events with the readings */
+    sensors_event_t a, g, temp;
+    mpu.getEvent(&a, &g, &temp);
+    /*read the sound sensor*/
+    voiceValue = analogRead(voicePin);
+    /*Convert read values to readable values*/
+    float xAxis = -g.gyro.x - a.acceleration.x;  // x position is reversed to map the 2D movement.
+    float yAxis = g.gyro.y + a.acceleration.y;
+    float xTilt = abs(xAxis);
+    float yTilt = abs(yAxis);
+    const int tiltThreshold = 1;
+
+    /*Debug*/
+    Serial.print("xAxis: ");
+    Serial.print(xAxis);
+    Serial.print(" yAxis: ");
+    Serial.print(yAxis);
+    Serial.print(" Volumn: ");
+    Serial.print(voiceValue);
+    Serial.println(" dB");
+
+    /*determine strongest tilt*/
+    float maxTilt = max(xTilt, yTilt);
+
+    /*make the gyroscope movement to control the arrow keys*/
+    if (maxTilt > tiltThreshold) {
+      if (xTilt > yTilt) {
+        if (xAxis < 0) {
+          Keyboard.release('D'); Keyboard.press('A'); Serial.println("left");
+        } else {
+          Keyboard.release('A'); Keyboard.press('D'); Serial.println("Right");
+        }
+      } else {
+        if (yAxis < 0) {
+          Keyboard.release('S'); Keyboard.press('W'); Serial.println("Up");
+        } else {
+          Keyboard.release('W');  Keyboard.press('S'); Serial.println("Down");
+        }
+      }
+    } else {
+      Keyboard.releaseAll();
+    }
+
+    /*make the valume sensor values to control the space bar*/
+    if (voiceValue > 45) {
+      Keyboard.press(' ');
+      Keyboard.release(' ');
+    }
+  }
+  delay(100);
+}
+
+void checkSwitch() {
   //Toggle button
   int bntValue = digitalRead(bntPin); //1 = unpressed, 0 = pressed
   if (previousBntValue == 0 && bntValue == 1) { //press and release onece
@@ -51,65 +105,4 @@ void loop() {
     takeover = !takeover;
   }
   previousBntValue = bntValue;
-
-  if (takeover) {
-    /* Get new sensor events with the readings */
-    sensors_event_t a, g, temp;
-    mpu.getEvent(&a, &g, &temp);
-
-    /* Print out the values */
-    /*
-      Serial.print("Acceleration X: ");
-      Serial.print(a.acceleration.x);
-      Serial.print(", Y: ");
-      Serial.print(a.acceleration.y);
-      Serial.print(", Z: ");
-      Serial.print(a.acceleration.z);
-      Serial.println(" m/s^2");
-
-      Serial.print("Rotation X: ");
-      Serial.print(g.gyro.x);
-      Serial.print(", Y: ");
-      Serial.print(g.gyro.y);
-      Serial.print(", Z: ");
-      Serial.print(g.gyro.z);
-      Serial.println(" rad/s");
-    */
-    Serial.print("Volumn: ");
-    Serial.print(voiceValue);
-    Serial.println(" dB");
-    // x position is reversed to match the mouse movement.
-
-    //debugging
-    //Serial.println("moving mouse");
-    //Serial.print("mouseX.move: ");
-    //Serial.print(-g.gyro.x - a.acceleration.x);
-    //Serial.print("mouseY.move: ");
-    //Serial.println(g.gyro.y + a.acceleration.y);
-
-    float xAxis = -g.gyro.x - a.acceleration.x;  // x position is reversed to match the mouse movement.
-    float yAxis = g.gyro.y + a.acceleration.y;
-
-    //make the gyroscope movement to control the arrow keys
-    if (xAxis < 0) {
-      Keyboard.press(KEY_LEFT_ARROW);
-      Keyboard.release(KEY_LEFT_ARROW);
-      Serial.println("left");
-    } else if (xAxis > 0) {
-      Keyboard.press(KEY_RIGHT_ARROW);
-      Keyboard.release(KEY_RIGHT_ARROW);
-      Serial.println("right");
-    }
-    if (yAxis < 0) {
-      Keyboard.press(KEY_UP_ARROW);
-      Keyboard.release(KEY_UP_ARROW);
-      Serial.println("up");
-    } else if (yAxis > 0) {
-      Keyboard.press(KEY_DOWN_ARROW);
-      Keyboard.release(KEY_DOWN_ARROW);
-      Serial.println("down");
-
-    }
-  }
-  delay(200);
 }
