@@ -71,7 +71,19 @@ void loop() {
 
     /*make the gyroscope movement to control the arrow keys*/
     if (maxTilt > tiltThreshold) {
-      pressKeys(xTilt, yTilt, xAxis, yAxis);
+      if (xTilt > yTilt) {
+        if (xAxis < 0) {
+          Keyboard.release('D'); Keyboard.press('A'); Serial.println("left");
+        } else {
+          Keyboard.release('A'); Keyboard.press('D'); Serial.println("Right");
+        }
+      } else {
+        if (yAxis < 0) {
+          Keyboard.release('S'); Keyboard.press('W'); Serial.println("Up");
+        } else {
+          Keyboard.release('W');  Keyboard.press('S'); Serial.println("Down");
+        }
+      }
     } else {
       Keyboard.releaseAll();
     }
