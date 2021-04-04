@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Feed Setting")]
     public Text PingText;
+    public Text RoomName;
     public GameObject disconnectUI;
     private bool Off = false;
     public GameObject PlayerFeed;
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         GameCanvas.SetActive(true);
+        // RoomName.text = "Room name: " + PhotonNetwork.GetRoomList();
     }
 
     private void Update()
