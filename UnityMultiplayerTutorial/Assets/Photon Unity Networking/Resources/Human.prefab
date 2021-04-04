@@ -606,6 +606,7 @@ MonoBehaviour:
   PlayerCamera: {fileID: 4724468038950539374}
   sr: {fileID: 4724468037506078676}
   PlayerNameText: {fileID: 1491194120558195094}
+  box: {fileID: 4724468037506078679}
   MoveSpeed: 5
   turnSpeed: 0
   isDragon: 0

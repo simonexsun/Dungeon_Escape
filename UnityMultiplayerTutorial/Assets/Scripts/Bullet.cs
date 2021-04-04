@@ -120,6 +120,7 @@ public class Bullet : Photon.MonoBehaviour
             {
                 target.RPC("ReduceSlimeHealth", PhotonTargets.AllBuffered, BulletDamage);
                 this.GetComponent<PhotonView>().RPC("DestroyObject", PhotonTargets.AllBuffered);
+              
             }
 
         }

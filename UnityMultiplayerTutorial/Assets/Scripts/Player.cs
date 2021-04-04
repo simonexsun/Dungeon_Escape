@@ -12,6 +12,7 @@ public class Player : Photon.MonoBehaviour
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
     public Text PlayerNameText;
+    public BoxCollider2D box;
 
     //movement parameters
     public float MoveSpeed;
@@ -104,6 +105,10 @@ public class Player : Photon.MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
+            enlargeBoxCollider();
+        }else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            resetBoxCollider();
         }
 
         //flip face direction
@@ -136,7 +141,14 @@ public class Player : Photon.MonoBehaviour
 
     }
 
-
+    private void enlargeBoxCollider()
+    {
+        box.size *= 5;
+    }
+    private void resetBoxCollider()
+    {
+        box.size /= 5;
+    }
 
     private void Shoot()
     {
