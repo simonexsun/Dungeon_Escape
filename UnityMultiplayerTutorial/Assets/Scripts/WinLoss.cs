@@ -26,7 +26,7 @@ public class WinLoss : Photon.MonoBehaviour
             CheckWL();
             timer -= 1 * Time.deltaTime;
         }
-        timerText.text = "Time: " + timer.ToString("F0");
+        timerText.text = "Time left: " + timer.ToString("F0");
     }
 
     public void CheckWL()
