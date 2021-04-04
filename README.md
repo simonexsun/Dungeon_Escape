@@ -1,7 +1,6 @@
 # Surveillance Escape
 
-**Try the in-developing game [here](https://mizardblack.itch.io/surveillance-escape)!**
-![Game Logo](./Documentation/dragon.png?raw=true "Game Logo")
+![Game Banner](./Documentation/banner.png?raw=true "Game banner")
 
 ## About This Project
 
@@ -26,10 +25,6 @@ Use [Unity 2020.3.0](https://unity3d.com/get-unity/download/archive) or newer ve
 2. In Unity menu bar, click _Window >> Photon Unity Networking >> PUN Wizard_, then in _Setting >> Setup Project_, paste in APPID
 
    > b97470c4-cde9-4af6-bd67-e662816d2a03
-
-   or email adress
-
-   > 15976134597@qq.com
 
 3. You're all set! Download the `Assets` directory and move it to your Unity project. You can start co-working on this project.
 
