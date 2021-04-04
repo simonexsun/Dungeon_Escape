@@ -1,6 +1,6 @@
 # Surveillance Escape
 
-![Game Banner](./Documentation/banner.png?raw=true "Game banner")
+![Game Banner](./Documentation/banner.jpg?raw=true "Game banner")
 
 ## About This Project
 
