@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5479142172137349547}
   - component: {fileID: 8618172814244217300}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef15a2c0ea8df043bd77ad5ecca4a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveDir: 0
   MoveSpeed: 15
   DestroyTime: 2
   BulletDamage: 10
@@ -145,12 +144,12 @@ MonoBehaviour:
   group: 0
   OwnerShipWasTransfered: 0
   prefixBackup: -1
-  synchronization: 0
+  synchronization: 3
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 1949053656754314052}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

@@ -18,8 +18,8 @@ public class WinLoss : Photon.MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Human:" + GameManager.Instance.humanCount);
-        Debug.Log("Dragon:" + GameManager.Instance.dragonCount);
+        // Debug.Log("Human:" + GameManager.Instance.humanCount);
+        // Debug.Log("Dragon:" + GameManager.Instance.dragonCount);
 
         if (GameManager.Instance.dragonCount > 0 && GameManager.Instance.humanCount > 0)
         {

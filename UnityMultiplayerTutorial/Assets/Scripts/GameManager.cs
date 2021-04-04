@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     [Header("PlayerSpawn")]
     [HideInInspector]public GameObject LocalPlayer;
-    public bool isDragon = true; // localPlayerOnThisComputerClickedTheDragonBox
+    public bool isDragon; // localPlayerOnThisComputerClickedTheDragonBox
     public int humanCount = 0;
     public int dragonCount = 0;
 
@@ -188,11 +188,19 @@ public class GameManager : MonoBehaviour
     [PunRPC]
     private void addDragon()
     {
-        dragonCount++;
+        // Array.Resize(ref dragonList, dragonList.Length ++);
+        // humanList.SetValue( dragonClone, dragonList.Length-1 );
+        // Debug.Log(dragonList);
+        // dragonCount = dragonList.Length;
+        dragonCount ++;
     }
     [PunRPC]
     private void addHuman()
     {
-        humanCount++;
+        // Array.Resize(ref humanList, humanList.Length ++);
+        // humanList.SetValue( humanClone, humanList.Length-1 );
+        // Debug.Log(huamnList);
+        // humanCount = humanList.Length;
+        humanCount ++;
     }
 }

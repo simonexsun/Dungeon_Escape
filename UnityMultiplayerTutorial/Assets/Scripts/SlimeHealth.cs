@@ -6,16 +6,10 @@ using UnityEngine.UI;
 public class SlimeHealth : Photon.MonoBehaviour
 {
     public float HealthAmount;
-
     public Image FillImage;
-
     public Animator anim;
-
     public float SlimeRechargeSpeed = 0.02f;
-
     private bool isDead = false;
-
-    
 
     private void Awake()
     {
@@ -63,8 +57,7 @@ public class SlimeHealth : Photon.MonoBehaviour
             Debug.Log("Slime is dead");
             isDead = true;
             //anim.SetBool("isRunning", false);
-            GameManager.Instance.SlimeAlive--;
-            Debug.Log(GameManager.Instance.SlimeAlive);
+            GameManager.Instance.SlimeAlive --;
             this.GetComponent<PhotonView>().RPC("DestroyObject", PhotonTargets.AllBuffered);
         }
     }
