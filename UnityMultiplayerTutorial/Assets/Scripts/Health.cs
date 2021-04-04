@@ -29,7 +29,7 @@ public class Health : Photon.MonoBehaviour
     [PunRPC]
     public void ReduceHealth(float amount)
     {
-        Debug.Log(amount);
+        // Debug.Log(amount);
         ModifyHealth(amount);
     }
 
@@ -41,6 +41,8 @@ public class Health : Photon.MonoBehaviour
         {
             alive = false;
             Debug.Log("player is dead");
+            GameManager.Instance.Die();
+            playerMove.DisableShoot = true;
             // GameManager.Instance.EnableRespawn();
             // playerMove.DisableInput = true;
             this.GetComponent<PhotonView>().RPC("Dead", PhotonTargets.AllBuffered);

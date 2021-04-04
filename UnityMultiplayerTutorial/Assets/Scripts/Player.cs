@@ -26,6 +26,7 @@ public class Player : Photon.MonoBehaviour
     public Transform FirePos;
 
     public bool DisableInput = false;
+    public bool DisableShoot = false;
 
     [Header("direction bools")]
     public bool faceUp = false;
@@ -102,7 +103,7 @@ public class Player : Photon.MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !DisableShoot)
         {
             Shoot();
             enlargeBoxCollider();

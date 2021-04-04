@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
 
+    public GameObject DeadMenu;
     public Text RespawnTimerText;
     public GameObject RespawnMenu;
     private float TimerAmount = 5f;
@@ -73,6 +74,10 @@ public class GameManager : MonoBehaviour
     {
         surface.BuildNavMesh();
         Debug.Log("baking mesh....");
+    }
+
+    public void Die(){
+        DeadMenu.SetActive(true);
     }
 
     public void EnableRespawn()
