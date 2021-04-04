@@ -8,7 +8,6 @@ public class SlimeHealth : Photon.MonoBehaviour
     public float HealthAmount;
     public Image FillImage;
     public Animator anim;
-    public float SlimeRechargeSpeed = 0.02f;
     private bool isDead = false;
 
     private void Awake()
@@ -34,13 +33,13 @@ public class SlimeHealth : Photon.MonoBehaviour
         if (photonView.isMine)
         {
             HealthAmount -= amount;
-            FillImage.fillAmount -= amount;
+            FillImage.fillAmount -= amount/30;
 
         }
         else
         {
             HealthAmount -= amount;
-            FillImage.fillAmount -= amount;
+            FillImage.fillAmount -= amount/30;
         }
 
         CheckHealth();
@@ -51,7 +50,7 @@ public class SlimeHealth : Photon.MonoBehaviour
 
     private void CheckHealth()
     {
-        FillImage.fillAmount = HealthAmount / 100f;
+        //FillImage.fillAmount = HealthAmount / 100f;
         if (photonView.isMine && HealthAmount <= 0)
         {
             Debug.Log("Slime is dead");

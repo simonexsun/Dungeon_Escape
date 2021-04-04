@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
         if(SlimeAlive < humanCount * SlimeCount)
         {
-            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity, 0);
+            PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(SlimePos.transform.position.x, SlimePos.transform.position.y), Quaternion.identity, 0);
             SlimeAlive++;
             Debug.Log("new slime is spawning");
         }
@@ -160,6 +160,7 @@ public class GameManager : MonoBehaviour
             PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(SlimePos.transform.position.x * randomValue, SlimePos.transform.position.x * randomValue), Quaternion.identity, 0);
         }
     }
+    
 
     public void LeaveRoom()
     {

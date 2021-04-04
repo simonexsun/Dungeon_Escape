@@ -29,12 +29,13 @@ public class Health : Photon.MonoBehaviour
     [PunRPC]
     public void ReduceHealth(float amount)
     {
+        Debug.Log(amount);
         ModifyHealth(amount);
     }
 
     private void CheckHealth()
     {
-        FillImage.fillAmount = HealthAmount / 100f;
+        //FillImage.fillAmount = HealthAmount / 100f;
 
         if (photonView.isMine && HealthAmount <= 0)
         {
@@ -73,18 +74,19 @@ public class Health : Photon.MonoBehaviour
         HealthAmount = 100f;
     }
 
+
     private void ModifyHealth(float amount)
     {
         if (photonView.isMine)
         {
             HealthAmount -= amount;
-            FillImage.fillAmount -= amount;
+            FillImage.fillAmount -= amount/100;
 
         }
         else
         {
             HealthAmount -= amount;
-            FillImage.fillAmount -= amount;
+            FillImage.fillAmount -= amount/100;
         }
 
         CheckHealth();

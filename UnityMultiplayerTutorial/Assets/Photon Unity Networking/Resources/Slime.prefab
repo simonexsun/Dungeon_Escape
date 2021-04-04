@@ -259,6 +259,7 @@ MonoBehaviour:
   target: {fileID: 4724468037506078677, guid: f46915299c3c87d48a933794b5e38872, type: 3}
   photonView: {fileID: 9123687127081485915}
   anim: {fileID: 5713475013930901768}
+  targetList: []
 --- !u!114 &9123687127081485915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +439,6 @@ MonoBehaviour:
   HealthAmount: 30
   FillImage: {fileID: 8448736867444732776}
   anim: {fileID: 5713475013930901768}
-  SlimeRechargeSpeed: 2
 --- !u!1818360609 &105080944293024704
 RotationConstraint:
   m_ObjectHideFlags: 0

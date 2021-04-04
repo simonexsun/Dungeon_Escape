@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d4242f455c279499d4cb96d1f24fd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthAmount: 30
+  HealthAmount: 100
   FillImage: {fileID: 8638117503653139943}
   playerMove: {fileID: 0}
   rb: {fileID: 2730997543826113338}
@@ -449,8 +449,6 @@ MonoBehaviour:
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 2141290603728859975}
-  FirePosUp: {fileID: 0}
-  FirePosDown: {fileID: 0}
   DisableInput: 0
   faceUp: 0
   faceDown: 0

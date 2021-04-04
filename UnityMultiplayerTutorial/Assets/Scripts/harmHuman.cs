@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class harmHuman : Photon.MonoBehaviour
 {
-    public float SlimeDamage = 0.1f;
+    public float SlimeDamage;
 
     // Start is called before the first frame update
     void Start()
