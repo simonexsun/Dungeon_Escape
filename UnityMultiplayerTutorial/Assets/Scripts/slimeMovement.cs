@@ -5,15 +5,16 @@ using UnityEngine.AI;
 
 public class slimeMovement : Photon.MonoBehaviour
 {
-    [SerializeField] Transform target;
+    private GameObject target;
+    private Transform targetTrans;
     private NavMeshAgent agent;
-    public PhotonView photonView;
+    private PhotonView photonView;
+    public GameObject slime;
     public Animator anim;
     public List<GameObject> targetList;
 
     void Start()
     {
-        // targetPos = GameObject.FindGameObjectWithTag("Player").transform;
         var photonViews = UnityEngine.Object.FindObjectsOfType<PhotonView>();
         foreach (var view in photonViews)
         {
@@ -29,20 +30,27 @@ public class slimeMovement : Photon.MonoBehaviour
             }  
         }
         int random = Random.Range(0,  targetList.Count-1);
-        target = targetList[random].transform;
-        Debug.Log(target.position);
+        target = targetList[random];
+        targetTrans = target.transform;
 
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     } 
 
-    // Update is called once per frame
     void Update()
     {
-        if (this){
-            agent.SetDestination(target.position);
-            anim.SetBool("isRunning", true);
+        // check if slime is null
+        if (slime != null){
+            // if target is alive, chase target
+            if(target.GetComponent<Health>().alive){
+                agent.SetDestination(targetTrans.position);
+                anim.SetBool("isRunning", true);
+            }
+            // otherwise destroy slime
+            else {
+                PhotonNetwork.Destroy(slime);
+            }
         }
         else{
             Debug.Log("slime is null");
