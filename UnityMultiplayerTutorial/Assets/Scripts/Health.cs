@@ -14,11 +14,18 @@ public class Health : Photon.MonoBehaviour
     public BoxCollider2D bc;
     public SpriteRenderer sr;
     public GameObject PlayerCanvas;
+    public Camera PlayerCamera;
+
+    //audio
+    AudioSource audioSource;
+    public AudioClip hit2;
+    public AudioClip death;
 
     public bool alive = true;
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         if (photonView.isMine)
         {
             GameManager.Instance.LocalPlayer = this.gameObject;
@@ -30,6 +37,7 @@ public class Health : Photon.MonoBehaviour
     public void ReduceHealth(float amount)
     {
         // Debug.Log(amount);
+        audioSource.PlayOneShot(hit2, 1F);
         ModifyHealth(amount);
     }
 
@@ -57,12 +65,14 @@ public class Health : Photon.MonoBehaviour
     [PunRPC]
     private void Dead()
     {
+        audioSource.PlayOneShot(death, 1F);
         bc.enabled = false; 
         sr.enabled = false; //disable sprite display
         PlayerCanvas.SetActive(false); //diable name tag and health bar display
         Color tmp = sr.color;
         tmp.a = 100f;
         sr.color = tmp; //make the sprite transparent 
+        PlayerCamera.orthographicSize = 16;
     }
 
     [PunRPC]

@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < SlimeCount; i++)
         {
-            float randomValue = Random.Range(1f, -1f);
+            float randomValue = Random.Range(7f, -7f);
             PhotonNetwork.Instantiate(SlimePrefab.name, new Vector2(SlimePos.transform.position.x * randomValue, SlimePos.transform.position.x * randomValue), Quaternion.identity, 0);
         }
     }
