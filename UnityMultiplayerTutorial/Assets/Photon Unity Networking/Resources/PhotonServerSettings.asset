@@ -28,13 +28,20 @@ MonoBehaviour:
   NetworkLogging: 1
   RunInBackground: 1
   RpcList:
+  - addDragon
+  - addHuman
+  - ChangeDir_down
   - ChangeDir_left
+  - ChangeDir_right
+  - ChangeDir_up
   - Chat
   - Dead
   - DestroyObject
   - DestroyRpc
+  - FlipDown
   - FlipFalse
   - FlipTrue
+  - FlipUp
   - InstantiateRpc
   - PickupItemInit
   - PunPickup
@@ -46,12 +53,4 @@ MonoBehaviour:
   - RequestForPickupTimes
   - Respawn
   - SendMessage
-  - FlipDown
-  - FlipUp
-  - ChangeDir_up
-  - ChangeDir_down
-  - ChangeDir_right
-  - addDragon
-  - addHuman
-  - Recharge
   DisableAutoOpenWizard: 1

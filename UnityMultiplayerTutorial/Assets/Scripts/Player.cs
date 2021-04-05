@@ -61,6 +61,8 @@ public class Player : Photon.MonoBehaviour
     {
         if (isDragon)
         {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
             if (Input.GetKey("a"))
             {
                 rb.transform.Rotate(0.0f, 0.0f, turnSpeed * Time.deltaTime, Space.Self);
