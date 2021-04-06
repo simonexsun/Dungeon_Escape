@@ -110,15 +110,18 @@ public class Player : Photon.MonoBehaviour
             }
         }
 
-
+       
         if (Input.GetKeyDown(KeyCode.Space) && !DisableShoot)
         {
             Shoot();
-            enlargeBoxCollider();
+            if(!isDragon){
+                enlargeBoxCollider();
+            }
         }else if (Input.GetKeyUp(KeyCode.Space))
         {
             resetBoxCollider();
         }
+
 
         //flip face direction
         if (Input.GetAxis("Horizontal") < 0)
