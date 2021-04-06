@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public Button StartPlayButton;
 
     [Header("Player Feed Setting")]
+    public GameObject Warning;
     public Text PingText;
     public Text RoomName;
     public GameObject disconnectUI;
@@ -131,12 +132,18 @@ public class GameManager : MonoBehaviour
 
     public void SelectDragon()
     {
-        isDragon = true;
-        Debug.Log("I'm Dragon.");
-        PlayButton.SetActive(true);
+        PlayButton.SetActive(false);
+        if(dragonCount < 1){
+            isDragon = true;
+            Debug.Log("I'm Dragon.");
+            PlayButton.SetActive(true);
+        }else{
+            Warning.SetActive(true);
+        }
     }
     public void SelectHuman()
     {
+        Warning.SetActive(false);
         isDragon = false;
         Debug.Log("I'm Human.");
         PlayButton.SetActive(true);
