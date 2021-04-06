@@ -454,8 +454,7 @@ MonoBehaviour:
   BulletObject: {fileID: 7750543699211347395, guid: a44299d2e53bfff4d93259b97f3de035,
     type: 3}
   FirePos: {fileID: 2141290603728859975}
-  dragonAttack: {fileID: 8300000, guid: a9160f6876f64bd43b4521f7375754a3, type: 3}
-  humanAttack: {fileID: 0}
+  AttackAudio: {fileID: 8300000, guid: a9160f6876f64bd43b4521f7375754a3, type: 3}
   cooldown: 0
   DisableInput: 0
   DisableShoot: 0

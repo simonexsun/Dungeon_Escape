@@ -25,8 +25,7 @@ public class Player : Photon.MonoBehaviour
     public GameObject BulletObject;
     public Transform FirePos;
     AudioSource audioSource;
-    public AudioClip dragonAttack;
-    public AudioClip humanAttack;
+    public AudioClip AttackAudio;
 
     public float cooldown = 0;
     public bool DisableInput = false;
@@ -169,7 +168,7 @@ public class Player : Photon.MonoBehaviour
         {
             if (cooldown <= 0)
             {
-                audioSource.PlayOneShot(dragonAttack, 1F);
+                audioSource.PlayOneShot(AttackAudio, 1F);
                 Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
                 GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
                 obj.transform.Rotate(0.0f, 0.0f, rb.rotation + 90, Space.Self);
@@ -181,7 +180,7 @@ public class Player : Photon.MonoBehaviour
         {
             if (cooldown <= 0)
             {
-                audioSource.PlayOneShot(humanAttack, 1F);
+                audioSource.PlayOneShot(AttackAudio, 1F);
                 Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
                 //Checking if human going up or going down, spawn the bullet accordingly
                 GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
