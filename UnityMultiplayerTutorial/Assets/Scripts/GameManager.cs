@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public GameObject FeedGrid;
 
     public GameObject DeadMenu;
+    public GameObject Instruction;
     public Text RespawnTimerText;
     public GameObject RespawnMenu;
     private float TimerAmount = 5f;
@@ -80,6 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void Die(){
         DeadMenu.SetActive(true);
+        Instruction.SetActive(false);
     }
 
     public void EnableRespawn()

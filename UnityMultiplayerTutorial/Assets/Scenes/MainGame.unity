@@ -776,7 +776,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1302076105}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1615,13 +1615,14 @@ MonoBehaviour:
     type: 3}
   FeedGrid: {fileID: 223062291}
   DeadMenu: {fileID: 1930539112}
+  Instruction: {fileID: 709885240}
   RespawnTimerText: {fileID: 1622188}
   RespawnMenu: {fileID: 1466233897}
   SlimePos: {fileID: 29371944}
   SlimeCount: 5
   SlimeAlive: 5
   LocalPlayer: {fileID: 0}
-  isDragon: 1
+  isDragon: 0
   humanCount: 0
   dragonCount: 0
   surface: {fileID: 789850290}
@@ -2760,7 +2761,7 @@ RectTransform:
   - {fileID: 1843098504}
   - {fileID: 724628978}
   m_Father: {fileID: 1302076105}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2797,7 +2798,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1302076105}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &929792735
 MonoBehaviour:
@@ -3788,7 +3789,7 @@ RectTransform:
   - {fileID: 1068386832}
   - {fileID: 1664552389}
   m_Father: {fileID: 1302076105}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4089,12 +4090,12 @@ RectTransform:
   - {fileID: 888386940}
   - {fileID: 1620924598}
   - {fileID: 709885241}
+  - {fileID: 1930539113}
   - {fileID: 900411475}
   - {fileID: 929792734}
   - {fileID: 223062292}
   - {fileID: 1234871853}
   - {fileID: 1466233898}
-  - {fileID: 1930539113}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4229,7 +4230,7 @@ RectTransform:
   - {fileID: 1703958098}
   - {fileID: 1622187}
   m_Father: {fileID: 1302076105}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5852,7 +5853,7 @@ RectTransform:
   - {fileID: 1088744086}
   - {fileID: 2106554864}
   m_Father: {fileID: 1302076105}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
