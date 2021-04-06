@@ -21,10 +21,10 @@ public class WinLoss : Photon.MonoBehaviour
         // Debug.Log("Human:" + GameManager.Instance.humanCount);
         // Debug.Log("Dragon:" + GameManager.Instance.dragonCount);
 
-        if (GameManager.Instance.dragonCount > 0 && GameManager.Instance.humanCount > 0)
+        if (GameManager.Instance.dragonCount > 0 && GameManager.Instance.humanCount > 0 && GameManager.Instance.ConfirmStartTimer)
         {
             CheckWL();
-            timer -= 1 * Time.deltaTime;
+            photonView.RPC("UpdateTimer", PhotonTargets.AllBuffered);
         }
         timerText.text = "Time left: " + timer.ToString("F0");
     }
@@ -65,4 +65,11 @@ public class WinLoss : Photon.MonoBehaviour
         PhotonNetwork.LoadLevel("HumanWin");
         // SceneManager.LoadScene("HumanWin", LoadSceneMode.Single);
     }
+
+    [PunRPC]
+    private void UpdateTimer(){
+        timer -= 1 * Time.deltaTime;
+    }
 }
+
+

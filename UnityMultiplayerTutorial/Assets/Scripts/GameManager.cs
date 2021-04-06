@@ -13,14 +13,21 @@ public class GameManager : MonoBehaviour
     public GameObject HumanPrefab;
     public GameObject SlimePrefab;
 
-    [Header("Game Setting")]
+    [Header("Game UI")]
     public GameObject SpawnCanvas;
+    public GameObject Warning;
     public GameObject SceneCamera;
     public GameObject PlayButton;
     public Button StartPlayButton;
+    public GameObject TimerText;    
+    public GameObject InstructionMenu;
+    public GameObject ReadyMenu;
+    public GameObject ReadyButton;
+    public Text TimerWarningText;
+    [HideInInspector]public bool ConfirmStartTimer = false;    
+    public GameObject DeadMenu;
 
     [Header("Player Feed Setting")]
-    public GameObject Warning;
     public Text PingText;
     public Text RoomName;
     public GameObject disconnectUI;
@@ -28,8 +35,7 @@ public class GameManager : MonoBehaviour
     public GameObject PlayerFeed;
     public GameObject FeedGrid;
 
-    public GameObject DeadMenu;
-    public GameObject Instruction;
+    [Header("Respawn Setting")]
     public Text RespawnTimerText;
     public GameObject RespawnMenu;
     private float TimerAmount = 5f;
@@ -82,7 +88,8 @@ public class GameManager : MonoBehaviour
 
     public void Die(){
         DeadMenu.SetActive(true);
-        Instruction.SetActive(false);
+        InstructionMenu.SetActive(false);
+        ReadyMenu.SetActive(false);
     }
 
     public void EnableRespawn()
@@ -113,12 +120,21 @@ public class GameManager : MonoBehaviour
         LocalPlayer.transform.localPosition = new Vector2(randomValue, 3f);
     }
 
-
+    public void CheckReady()
+    {
+        if(humanCount>0 && dragonCount>0){
+            TimerWarningText.text = "Hit 'yes' will start the timer!";
+        }else{
+            TimerWarningText.text = "You need to have at least 1 dragon and 1 human to start the game!";
+            ConfirmStartTimer = false;
+        }
+    }
     private void CheckInput()
     {
         if (Input.GetKeyDown(KeyCode.Return) && SpawnCanvas.active){
             StartPlayButton.onClick.Invoke();
         }
+
         if(Off && Input.GetKeyDown(KeyCode.Escape))
         {
             disconnectUI.SetActive(false);
@@ -165,6 +181,14 @@ public class GameManager : MonoBehaviour
         }
         SpawnCanvas.SetActive(false);
         SceneCamera.SetActive(false);
+        ReadyMenu.SetActive(true);
+    }
+    public void ConfirmStartGame(){
+        if(ConfirmStartTimer){
+            ReadyMenu.SetActive(false);
+            InstructionMenu.SetActive(true);
+            TimerText.SetActive(true);
+        }
     }
 
     //spawn NPCs for each room
@@ -219,5 +243,9 @@ public class GameManager : MonoBehaviour
         // Debug.Log(huamnList);
         // humanCount = humanList.Length;
         humanCount ++;
+    }
+    [PunRPC]
+    public void ToggleStartTimer(){
+        ConfirmStartTimer = true;
     }
 }

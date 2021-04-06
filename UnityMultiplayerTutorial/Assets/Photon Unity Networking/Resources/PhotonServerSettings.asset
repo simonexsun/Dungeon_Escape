@@ -53,4 +53,6 @@ MonoBehaviour:
   - RequestForPickupTimes
   - Respawn
   - SendMessage
+  - ToggleStartTimer
+  - UpdateTimer
   DisableAutoOpenWizard: 1

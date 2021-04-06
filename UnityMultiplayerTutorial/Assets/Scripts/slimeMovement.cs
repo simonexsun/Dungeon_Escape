@@ -44,8 +44,10 @@ public class slimeMovement : Photon.MonoBehaviour
         if (slime != null){
             // if target is alive, chase target
             if(target.GetComponent<Health>().alive){
-                agent.SetDestination(targetTrans.position);
-                anim.SetBool("isRunning", true);
+                if(GameManager.Instance.ConfirmStartTimer){
+                    agent.SetDestination(targetTrans.position);
+                    anim.SetBool("isRunning", true);
+                }
             }
             // otherwise destroy slime
             else {
