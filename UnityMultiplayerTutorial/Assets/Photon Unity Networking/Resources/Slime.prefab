@@ -120,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 5046086019930856303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4213487842037766181}
   - {fileID: 143786682591061217}
@@ -224,7 +224,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &5713475013930901768
 Animator:
   serializedVersion: 3
@@ -256,8 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d4b75a1b9b843fbbdadeb5124a2d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4724468037506078677, guid: f46915299c3c87d48a933794b5e38872, type: 3}
-  targetTrans: {fileID: 0}
   slime: {fileID: 5046086019930856303}
   anim: {fileID: 5713475013930901768}
   targetList: []
@@ -402,7 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86cac5ee81744a05a25b2a7b8d46e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlimeDamage: 1
+  SlimeDamage: 15
+  Human: {fileID: 0}
 --- !u!195 &4384528704758491225
 NavMeshAgent:
   m_ObjectHideFlags: 0

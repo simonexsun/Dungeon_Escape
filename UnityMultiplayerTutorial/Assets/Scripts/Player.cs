@@ -24,7 +24,10 @@ public class Player : Photon.MonoBehaviour
     //attack parameters
     public GameObject BulletObject;
     public Transform FirePos;
+    AudioSource audioSource;
+    public AudioClip AttackAudio;
 
+    public float cooldown = 0;
     public bool DisableInput = false;
     public bool DisableShoot = false;
 
@@ -37,6 +40,7 @@ public class Player : Photon.MonoBehaviour
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         if (photonView.isMine)
         {
             PlayerCamera.SetActive(true);
@@ -55,12 +59,15 @@ public class Player : Photon.MonoBehaviour
         {
             CheckInput();
         }
+        cooldown -= 1 * Time.deltaTime;
     }
 
     private void CheckInput()
     {
         if (isDragon)
         {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
             if (Input.GetKey("a"))
             {
                 rb.transform.Rotate(0.0f, 0.0f, turnSpeed * Time.deltaTime, Space.Self);
@@ -102,15 +109,18 @@ public class Player : Photon.MonoBehaviour
             }
         }
 
-
+       
         if (Input.GetKeyDown(KeyCode.Space) && !DisableShoot)
         {
             Shoot();
-            enlargeBoxCollider();
+            if(!isDragon){
+                enlargeBoxCollider();
+            }
         }else if (Input.GetKeyUp(KeyCode.Space))
         {
             resetBoxCollider();
         }
+
 
         //flip face direction
         if (Input.GetAxis("Horizontal") < 0)
@@ -156,40 +166,49 @@ public class Player : Photon.MonoBehaviour
 
         if (isDragon)
         {
-            Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
-            GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
-            obj.transform.Rotate(0.0f, 0.0f, rb.rotation + 90, Space.Self);
-            // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+            if (cooldown <= 0)
+            {
+                audioSource.PlayOneShot(AttackAudio, 1F);
+                Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
+                GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
+                obj.transform.Rotate(0.0f, 0.0f, rb.rotation + 90, Space.Self);
+                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                cooldown = 1;
+            }
         }
         else
         {
-            Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
-            //Checking if human going up or going down, spawn the bullet accordingly
-            GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
+            if (cooldown <= 0)
+            {
+                audioSource.PlayOneShot(AttackAudio, 1F);
+                Vector2 bulletPos = new Vector2(FirePos.transform.position.x, FirePos.transform.position.y);
+                //Checking if human going up or going down, spawn the bullet accordingly
+                GameObject obj = PhotonNetwork.Instantiate(BulletObject.name, bulletPos, Quaternion.identity, 0);
 
-            if (faceLeft)
-            {
-                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
-                obj.transform.Rotate(0.0f, 0.0f, 180, Space.Self);
-            }
-            if (faceRight)
-            {
-                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
-            }
-            if (faceUp)
-            {
-                // bulletPos = new Vector2(FirePosUp.transform.position.x, FirePosUp.transform.position.y);
-                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
-                obj.transform.Rotate(0.0f, 0.0f, -90, Space.Self);
-            }
-            if (faceDown)
-            {
-                // bulletPos = new Vector2(FirePosDown.transform.position.x, FirePosDown.transform.position.y);
-                // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
-                obj.transform.Rotate(0.0f, 0.0f, 90, Space.Self);
+                if (faceLeft)
+                {
+                    // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                    obj.transform.Rotate(0.0f, 0.0f, 180, Space.Self);
+                }
+                if (faceRight)
+                {
+                    // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                }
+                if (faceUp)
+                {
+                    // bulletPos = new Vector2(FirePosUp.transform.position.x, FirePosUp.transform.position.y);
+                    // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                    obj.transform.Rotate(0.0f, 0.0f, -90, Space.Self);
+                }
+                if (faceDown)
+                {
+                    // bulletPos = new Vector2(FirePosDown.transform.position.x, FirePosDown.transform.position.y);
+                    // obj.GetComponent<PhotonView>().RPC("ChangeDir_right", PhotonTargets.AllBuffered);
+                    obj.transform.Rotate(0.0f, 0.0f, 90, Space.Self);
+                }
+                cooldown = 1;
             }
         }
-
         anim.SetTrigger("shootTrigger");
     }
 
