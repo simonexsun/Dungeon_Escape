@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject SlimePrefab;
 
     [Header("Game Setting")]
-    public GameObject GameCanvas;
+    public GameObject SpawnCanvas;
     public GameObject SceneCamera;
     public GameObject PlayButton;
     public Button StartPlayButton;
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        GameCanvas.SetActive(true);
+        SpawnCanvas.SetActive(true);
         // RoomName.text = "Room name: " + PhotonNetwork.GetRoomList();
     }
 
@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
 
     private void CheckInput()
     {
-        if (Input.GetKeyDown(KeyCode.Return)){
+        if (Input.GetKeyDown(KeyCode.Return) && SpawnCanvas.active){
             StartPlayButton.onClick.Invoke();
         }
         if(Off && Input.GetKeyDown(KeyCode.Escape))
@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
             this.GetComponent<PhotonView>().RPC("addHuman", PhotonTargets.AllBuffered);
             PhotonNetwork.Instantiate(HumanPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y * randomValue), Quaternion.identity, 0);
         }
-        GameCanvas.SetActive(false);
+        SpawnCanvas.SetActive(false);
         SceneCamera.SetActive(false);
     }
 
