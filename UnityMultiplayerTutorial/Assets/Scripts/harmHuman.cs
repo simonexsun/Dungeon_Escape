@@ -5,7 +5,6 @@ using UnityEngine;
 public class harmHuman : Photon.MonoBehaviour
 {
     public float SlimeDamage;
-    public GameObject Human;
     float knockbackForce = 1200f;
 
     // Start is called before the first frame update

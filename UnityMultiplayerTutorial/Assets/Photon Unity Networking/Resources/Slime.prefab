@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86cac5ee81744a05a25b2a7b8d46e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlimeDamage: 15
+  SlimeDamage: 5
   Human: {fileID: 0}
 --- !u!195 &4384528704758491225
 NavMeshAgent:
