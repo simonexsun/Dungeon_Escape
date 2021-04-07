@@ -188,7 +188,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2730997543826113333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   PlayerCamera: {fileID: 2730997541982274690}
   sr: {fileID: 2730997543826113336}
   PlayerNameText: {fileID: 8126486365186647418}
-  box: {fileID: 2730997543826113339}
+  ExplosionBox: {fileID: 0}
   MoveSpeed: 30
   turnSpeed: 50
   isDragon: 1
