@@ -9,11 +9,13 @@ public class WinLoss : Photon.MonoBehaviour
     public GameObject[] humans;
     public float timer;
     public Text timerText;
+    public float humanDeadCount;
 
     // Update is called once per frame
     private void Start()
     {
         timer = 60f;
+        humanDeadCount = 0;
     }
 
     void Update()
@@ -37,8 +39,9 @@ public class WinLoss : Photon.MonoBehaviour
         {
             if(human.GetComponent<Health>().alive == false)
             {
-                Debug.Log("all humans are dead");
-                BossWin();
+                Debug.Log("1 human is died");
+                humanDeadCount ++;
+                human.tag="DeadPlayer";
             }
             else
             {
@@ -48,7 +51,11 @@ public class WinLoss : Photon.MonoBehaviour
 
         if (timer <= 0f)
         {
-            HumansWin();
+            if(humanDeadCount == GameManager.Instance.humanCount){
+                BossWin();
+            }else{
+                HumansWin();
+            }
         }
     }
 
